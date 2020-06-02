@@ -42,3 +42,6 @@ Open App
     Click Element After It Is Visible    id=skip
     Click Element After It Is Visible    id=done
     Wait Until Element Is Visible On Page    //*[@text="New wallet"]    timeout=3s    error=Wallet page should be visible.
+
+Go Back To List
+    Click Element After It Is Visible    //*[contains(@resource-id, "secondary_toolbar")]/*[@class="android.widget.ImageButton"]
