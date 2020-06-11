@@ -8,7 +8,7 @@ Create Wallet
     Click Element After It Is Visible    id=action_save_changes
     Wait Until Element Is Visible On Page    //*[@text="Transactions"]    timeout=3s    error=Transactions page should be visible.
     Click Element After It Is Visible    //*[@content-desc="Open"]
-    ${walletName} =    Get Text    id=material_drawer_account_header_name
+    ${walletName} =    Get Text After It Is Visible    id=material_drawer_account_header_name
     Should Be Equal    Living Expenses    ${walletName}
 
 Wait Until Element Is Visible On Page
@@ -20,6 +20,17 @@ Click Element After It Is Visible
     [Arguments]    ${locator}
     Wait Until Element Is Visible On Page    ${locator}    timeout=3s    error=Element should be visible.
     Click Element    ${locator}
+
+Input Text After It Is Visible
+    [Arguments]    ${locator}    ${text}
+    Wait Until Element Is Visible On Page    ${locator}    timeout=3s    error=Element should be visible.
+    Input Text    ${locator}    ${text}
+
+Get Text After It Is Visible
+    [Arguments]    ${locator}
+    Wait Until Element Is Visible On Page    ${locator}    timeout=3s    error=Element should be visible.
+    ${text} =    Get Text    ${locator}
+    [Return]    ${text}
 
 Delete Wallet
     Click Element After It Is Visible    id=material_drawer_account_header_text_section
