@@ -1,0 +1,1538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.3 on win32)" generated="20200602 20:42:36.046">
+<suite id="s1" name="Moneywallet Test Automation" source="C:\Users\dcTrack\Desktop\STV_Project\moneywallet_test_automation">
+<suite id="s1-s1" name="Budget" source="C:\Users\dcTrack\Desktop\STV_Project\moneywallet_test_automation\Budget">
+<suite id="s1-s1-s1" name="Create a new Budget" source="C:\Users\dcTrack\Desktop\STV_Project\moneywallet_test_automation\Budget\Create a new Budget.robot">
+<test id="s1-s1-s1-t1" name="Create a new budget with Incomes type">
+<kw name="Run Keywords" library="BuiltIn" type="setup">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>Open App</arg>
+<arg>AND</arg>
+<arg>Create Wallet</arg>
+</arguments>
+<kw name="Open App" library="Keywords">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=7.1.1</arg>
+<arg>deviceName=Pixel 2 API 25</arg>
+<arg>app=C:\\Users\\Dctrack\\Desktop\\STV_Porject\\moneywallet\\app\\proprietaryOsm\\release\\app-proprietary-osm-release.apk</arg>
+<arg>appPackage=com.oriondev.moneywallet</arg>
+</arguments>
+<msg timestamp="20200602 20:42:38.534" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session {"capabilities": {"firstMatch": [{"platformName": "Android", "appium:platformVersion": "7.1.1", "appium:deviceName": "Pixel 2 API 25", "appium:app": "C:\\Users\\Dctrack\\Desktop\\STV_Porject\\moneywallet\\app\\proprietaryOsm\\release\\app-proprietary-osm-release.apk", "appium:appPackage": "com.oriondev.moneywallet"}]}, "desiredCapabilities": {"platformName": "Android", "platformVersion": "7.1.1", "deviceName": "Pixel 2 API 25", "app": "C:\\Users\\Dctrack\\Desktop\\STV_Porject\\moneywallet\\app\\proprietaryOsm\\release\\app-proprietary-osm-release.apk", "appPackage": "com.oriondev.moneywallet"}}</msg>
+<msg timestamp="20200602 20:42:38.536" level="DEBUG">Starting new HTTP connection (1): 127.0.0.1</msg>
+<msg timestamp="20200602 20:42:39.074" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 500 978</msg>
+<msg timestamp="20200602 20:42:39.074" level="DEBUG">Finished Request</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200602 20:42:39.083" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.083" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-33&gt;", line 2, in capture_page_screenshot
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.075" endtime="20200602 20:42:39.084"></status>
+</kw>
+<msg timestamp="20200602 20:42:39.086" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.093" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\Dctrack\Desktop\STV_Porject\moneywallet\app\proprietaryOsm\release\app-proprietary-osm-release.apk' does not exist or is not accessible
+</msg>
+<msg timestamp="20200602 20:42:39.094" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-36&gt;", line 2, in open_application
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 52, in open_application
+    application = webdriver.Remote(str(remote_url), desired_caps)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\appium\webdriver\webdriver.py", line 155, in __init__
+    proxy
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\appium\webdriver\webdriver.py", line 225, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)</msg>
+<status status="FAIL" starttime="20200602 20:42:36.521" endtime="20200602 20:42:39.094"></status>
+</kw>
+<status status="FAIL" starttime="20200602 20:42:36.520" endtime="20200602 20:42:39.095"></status>
+</kw>
+<status status="FAIL" starttime="20200602 20:42:36.519" endtime="20200602 20:42:39.096"></status>
+</kw>
+<kw name="Run Keywords" library="BuiltIn" type="teardown">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>Click Element After It Is Visible</arg>
+<arg>//*[@content-desc="Open"]</arg>
+<arg>AND</arg>
+<arg>Delete Wallet</arg>
+<arg>AND</arg>
+<arg>Close Application</arg>
+</arguments>
+<kw name="Click Element After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@content-desc="Open"]</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=${timeout}</arg>
+<arg>error=${error}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200602 20:42:39.102" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.102" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-33&gt;", line 2, in capture_page_screenshot
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.100" endtime="20200602 20:42:39.103"></status>
+</kw>
+<msg timestamp="20200602 20:42:39.105" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.108" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.108" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-68&gt;", line 2, in wait_until_page_contains_element
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 88, in wait_until_page_contains_element
+    self._wait_until(timeout, error, self._is_element_present, locator)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 122, in _wait_until
+    self._wait_until_no_error(timeout, wait_func)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 128, in _wait_until_no_error
+    timeout_error = wait_func(*args)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 120, in wait_func
+    return None if function(*args) else error
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 619, in _is_element_present
+    application = self._current_application()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.099" endtime="20200602 20:42:39.109"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=${timeout}</arg>
+<arg>error=${error}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200602 20:42:39.112" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.112" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-33&gt;", line 2, in capture_page_screenshot
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.110" endtime="20200602 20:42:39.113"></status>
+</kw>
+<msg timestamp="20200602 20:42:39.114" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.115" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.116" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-65&gt;", line 2, in wait_until_element_is_visible
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 28, in wait_until_element_is_visible
+    self._wait_until_no_error(timeout, check_visibility)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 128, in _wait_until_no_error
+    timeout_error = wait_func(*args)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 21, in check_visibility
+    visible = self._is_visible(locator)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 624, in _is_visible
+    element = self._element_find(locator, True, False)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 570, in _element_find
+    application = self._current_application()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.109" endtime="20200602 20:42:39.116"></status>
+</kw>
+<status status="FAIL" starttime="20200602 20:42:39.098" endtime="20200602 20:42:39.117"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200602 20:42:39.118" level="INFO">Clicking element '//*[@content-desc="Open"]'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200602 20:42:39.121" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.121" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-33&gt;", line 2, in capture_page_screenshot
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.119" endtime="20200602 20:42:39.121"></status>
+</kw>
+<msg timestamp="20200602 20:42:39.123" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.124" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.125" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-3&gt;", line 2, in click_element
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 42, in click_element
+    self._element_find(locator, True, True).click()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 570, in _element_find
+    application = self._current_application()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.117" endtime="20200602 20:42:39.125"></status>
+</kw>
+<status status="FAIL" starttime="20200602 20:42:39.097" endtime="20200602 20:42:39.126"></status>
+</kw>
+<kw name="Delete Wallet" library="Keywords">
+<kw name="Click Element After It Is Visible" library="Keywords">
+<arguments>
+<arg>id=material_drawer_account_header_text_section</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=${timeout}</arg>
+<arg>error=${error}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200602 20:42:39.132" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.132" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-33&gt;", line 2, in capture_page_screenshot
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.130" endtime="20200602 20:42:39.132"></status>
+</kw>
+<msg timestamp="20200602 20:42:39.134" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.135" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.135" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-68&gt;", line 2, in wait_until_page_contains_element
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 88, in wait_until_page_contains_element
+    self._wait_until(timeout, error, self._is_element_present, locator)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 122, in _wait_until
+    self._wait_until_no_error(timeout, wait_func)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 128, in _wait_until_no_error
+    timeout_error = wait_func(*args)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 120, in wait_func
+    return None if function(*args) else error
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 619, in _is_element_present
+    application = self._current_application()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.129" endtime="20200602 20:42:39.136"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=${timeout}</arg>
+<arg>error=${error}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200602 20:42:39.139" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.139" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-33&gt;", line 2, in capture_page_screenshot
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.137" endtime="20200602 20:42:39.140"></status>
+</kw>
+<msg timestamp="20200602 20:42:39.141" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.143" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.143" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-65&gt;", line 2, in wait_until_element_is_visible
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 28, in wait_until_element_is_visible
+    self._wait_until_no_error(timeout, check_visibility)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 128, in _wait_until_no_error
+    timeout_error = wait_func(*args)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 21, in check_visibility
+    visible = self._is_visible(locator)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 624, in _is_visible
+    element = self._element_find(locator, True, False)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 570, in _element_find
+    application = self._current_application()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.136" endtime="20200602 20:42:39.144"></status>
+</kw>
+<status status="FAIL" starttime="20200602 20:42:39.128" endtime="20200602 20:42:39.144"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200602 20:42:39.146" level="INFO">Clicking element 'id=material_drawer_account_header_text_section'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200602 20:42:39.148" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.148" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-33&gt;", line 2, in capture_page_screenshot
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.146" endtime="20200602 20:42:39.149"></status>
+</kw>
+<msg timestamp="20200602 20:42:39.151" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.153" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.153" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-3&gt;", line 2, in click_element
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 42, in click_element
+    self._element_find(locator, True, True).click()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 570, in _element_find
+    application = self._current_application()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.144" endtime="20200602 20:42:39.154"></status>
+</kw>
+<status status="FAIL" starttime="20200602 20:42:39.127" endtime="20200602 20:42:39.155"></status>
+</kw>
+<kw name="Click Element After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@text="Manage wallets"]</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=${timeout}</arg>
+<arg>error=${error}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200602 20:42:39.161" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.162" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-33&gt;", line 2, in capture_page_screenshot
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.159" endtime="20200602 20:42:39.163"></status>
+</kw>
+<msg timestamp="20200602 20:42:39.165" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.167" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.167" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-68&gt;", line 2, in wait_until_page_contains_element
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 88, in wait_until_page_contains_element
+    self._wait_until(timeout, error, self._is_element_present, locator)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 122, in _wait_until
+    self._wait_until_no_error(timeout, wait_func)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 128, in _wait_until_no_error
+    timeout_error = wait_func(*args)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 120, in wait_func
+    return None if function(*args) else error
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 619, in _is_element_present
+    application = self._current_application()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.157" endtime="20200602 20:42:39.168"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=${timeout}</arg>
+<arg>error=${error}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200602 20:42:39.173" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.174" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-33&gt;", line 2, in capture_page_screenshot
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.170" endtime="20200602 20:42:39.174"></status>
+</kw>
+<msg timestamp="20200602 20:42:39.176" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.178" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.179" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-65&gt;", line 2, in wait_until_element_is_visible
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 28, in wait_until_element_is_visible
+    self._wait_until_no_error(timeout, check_visibility)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 128, in _wait_until_no_error
+    timeout_error = wait_func(*args)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 21, in check_visibility
+    visible = self._is_visible(locator)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 624, in _is_visible
+    element = self._element_find(locator, True, False)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 570, in _element_find
+    application = self._current_application()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.169" endtime="20200602 20:42:39.179"></status>
+</kw>
+<status status="FAIL" starttime="20200602 20:42:39.156" endtime="20200602 20:42:39.180"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200602 20:42:39.183" level="INFO">Clicking element '//*[@text="Manage wallets"]'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200602 20:42:39.186" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.186" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-33&gt;", line 2, in capture_page_screenshot
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.184" endtime="20200602 20:42:39.187"></status>
+</kw>
+<msg timestamp="20200602 20:42:39.189" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.191" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.191" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-3&gt;", line 2, in click_element
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 42, in click_element
+    self._element_find(locator, True, True).click()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 570, in _element_find
+    application = self._current_application()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.180" endtime="20200602 20:42:39.192"></status>
+</kw>
+<status status="FAIL" starttime="20200602 20:42:39.155" endtime="20200602 20:42:39.193"></status>
+</kw>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>//*[@text="Manage wallets"]</arg>
+<arg>timeout=3s</arg>
+<arg>error=Manage wallets page should be visible.</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=${timeout}</arg>
+<arg>error=${error}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200602 20:42:39.200" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.201" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-33&gt;", line 2, in capture_page_screenshot
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.198" endtime="20200602 20:42:39.201"></status>
+</kw>
+<msg timestamp="20200602 20:42:39.202" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.204" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.204" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-68&gt;", line 2, in wait_until_page_contains_element
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 88, in wait_until_page_contains_element
+    self._wait_until(timeout, error, self._is_element_present, locator)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 122, in _wait_until
+    self._wait_until_no_error(timeout, wait_func)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 128, in _wait_until_no_error
+    timeout_error = wait_func(*args)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 120, in wait_func
+    return None if function(*args) else error
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 619, in _is_element_present
+    application = self._current_application()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.195" endtime="20200602 20:42:39.205"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=${timeout}</arg>
+<arg>error=${error}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200602 20:42:39.208" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.209" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-33&gt;", line 2, in capture_page_screenshot
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.206" endtime="20200602 20:42:39.209"></status>
+</kw>
+<msg timestamp="20200602 20:42:39.211" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.213" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.213" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-65&gt;", line 2, in wait_until_element_is_visible
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 28, in wait_until_element_is_visible
+    self._wait_until_no_error(timeout, check_visibility)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 128, in _wait_until_no_error
+    timeout_error = wait_func(*args)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 21, in check_visibility
+    visible = self._is_visible(locator)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 624, in _is_visible
+    element = self._element_find(locator, True, False)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 570, in _element_find
+    application = self._current_application()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.205" endtime="20200602 20:42:39.214"></status>
+</kw>
+<status status="FAIL" starttime="20200602 20:42:39.193" endtime="20200602 20:42:39.214"></status>
+</kw>
+<kw name="Click Element After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@text="Living Expenses"]</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=${timeout}</arg>
+<arg>error=${error}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200602 20:42:39.221" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.221" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-33&gt;", line 2, in capture_page_screenshot
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.219" endtime="20200602 20:42:39.222"></status>
+</kw>
+<msg timestamp="20200602 20:42:39.224" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.226" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.226" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-68&gt;", line 2, in wait_until_page_contains_element
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 88, in wait_until_page_contains_element
+    self._wait_until(timeout, error, self._is_element_present, locator)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 122, in _wait_until
+    self._wait_until_no_error(timeout, wait_func)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 128, in _wait_until_no_error
+    timeout_error = wait_func(*args)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 120, in wait_func
+    return None if function(*args) else error
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 619, in _is_element_present
+    application = self._current_application()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.218" endtime="20200602 20:42:39.228"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=${timeout}</arg>
+<arg>error=${error}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200602 20:42:39.237" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.238" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-33&gt;", line 2, in capture_page_screenshot
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.232" endtime="20200602 20:42:39.238"></status>
+</kw>
+<msg timestamp="20200602 20:42:39.240" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.241" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.242" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-65&gt;", line 2, in wait_until_element_is_visible
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 28, in wait_until_element_is_visible
+    self._wait_until_no_error(timeout, check_visibility)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 128, in _wait_until_no_error
+    timeout_error = wait_func(*args)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 21, in check_visibility
+    visible = self._is_visible(locator)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 624, in _is_visible
+    element = self._element_find(locator, True, False)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 570, in _element_find
+    application = self._current_application()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.230" endtime="20200602 20:42:39.242"></status>
+</kw>
+<status status="FAIL" starttime="20200602 20:42:39.216" endtime="20200602 20:42:39.243"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200602 20:42:39.245" level="INFO">Clicking element '//*[@text="Living Expenses"]'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200602 20:42:39.247" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.247" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-33&gt;", line 2, in capture_page_screenshot
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.245" endtime="20200602 20:42:39.247"></status>
+</kw>
+<msg timestamp="20200602 20:42:39.249" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.250" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.250" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-3&gt;", line 2, in click_element
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 42, in click_element
+    self._element_find(locator, True, True).click()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 570, in _element_find
+    application = self._current_application()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.243" endtime="20200602 20:42:39.251"></status>
+</kw>
+<status status="FAIL" starttime="20200602 20:42:39.215" endtime="20200602 20:42:39.251"></status>
+</kw>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>//*[@text="Wallet"]</arg>
+<arg>timeout=3s</arg>
+<arg>error=Wallet page should be visible.</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=${timeout}</arg>
+<arg>error=${error}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200602 20:42:39.255" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.255" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-33&gt;", line 2, in capture_page_screenshot
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.253" endtime="20200602 20:42:39.256"></status>
+</kw>
+<msg timestamp="20200602 20:42:39.257" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.259" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.259" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-68&gt;", line 2, in wait_until_page_contains_element
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 88, in wait_until_page_contains_element
+    self._wait_until(timeout, error, self._is_element_present, locator)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 122, in _wait_until
+    self._wait_until_no_error(timeout, wait_func)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 128, in _wait_until_no_error
+    timeout_error = wait_func(*args)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 120, in wait_func
+    return None if function(*args) else error
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 619, in _is_element_present
+    application = self._current_application()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.252" endtime="20200602 20:42:39.260"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=${timeout}</arg>
+<arg>error=${error}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200602 20:42:39.267" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.268" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-33&gt;", line 2, in capture_page_screenshot
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.263" endtime="20200602 20:42:39.268"></status>
+</kw>
+<msg timestamp="20200602 20:42:39.270" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.272" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.272" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-65&gt;", line 2, in wait_until_element_is_visible
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 28, in wait_until_element_is_visible
+    self._wait_until_no_error(timeout, check_visibility)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 128, in _wait_until_no_error
+    timeout_error = wait_func(*args)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 21, in check_visibility
+    visible = self._is_visible(locator)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 624, in _is_visible
+    element = self._element_find(locator, True, False)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 570, in _element_find
+    application = self._current_application()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.261" endtime="20200602 20:42:39.273"></status>
+</kw>
+<status status="FAIL" starttime="20200602 20:42:39.252" endtime="20200602 20:42:39.274"></status>
+</kw>
+<kw name="Click Element After It Is Visible" library="Keywords">
+<arguments>
+<arg>id=action_delete_item</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=${timeout}</arg>
+<arg>error=${error}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200602 20:42:39.278" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.278" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-33&gt;", line 2, in capture_page_screenshot
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.276" endtime="20200602 20:42:39.278"></status>
+</kw>
+<msg timestamp="20200602 20:42:39.280" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.281" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.281" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-68&gt;", line 2, in wait_until_page_contains_element
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 88, in wait_until_page_contains_element
+    self._wait_until(timeout, error, self._is_element_present, locator)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 122, in _wait_until
+    self._wait_until_no_error(timeout, wait_func)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 128, in _wait_until_no_error
+    timeout_error = wait_func(*args)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 120, in wait_func
+    return None if function(*args) else error
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 619, in _is_element_present
+    application = self._current_application()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.275" endtime="20200602 20:42:39.282"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=${timeout}</arg>
+<arg>error=${error}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200602 20:42:39.285" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.285" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-33&gt;", line 2, in capture_page_screenshot
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.283" endtime="20200602 20:42:39.286"></status>
+</kw>
+<msg timestamp="20200602 20:42:39.287" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.288" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.288" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-65&gt;", line 2, in wait_until_element_is_visible
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 28, in wait_until_element_is_visible
+    self._wait_until_no_error(timeout, check_visibility)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 128, in _wait_until_no_error
+    timeout_error = wait_func(*args)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 21, in check_visibility
+    visible = self._is_visible(locator)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 624, in _is_visible
+    element = self._element_find(locator, True, False)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 570, in _element_find
+    application = self._current_application()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.283" endtime="20200602 20:42:39.289"></status>
+</kw>
+<status status="FAIL" starttime="20200602 20:42:39.275" endtime="20200602 20:42:39.289"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200602 20:42:39.291" level="INFO">Clicking element 'id=action_delete_item'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200602 20:42:39.293" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.293" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-33&gt;", line 2, in capture_page_screenshot
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.292" endtime="20200602 20:42:39.294"></status>
+</kw>
+<msg timestamp="20200602 20:42:39.296" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.298" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.299" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-3&gt;", line 2, in click_element
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 42, in click_element
+    self._element_find(locator, True, True).click()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 570, in _element_find
+    application = self._current_application()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.290" endtime="20200602 20:42:39.300"></status>
+</kw>
+<status status="FAIL" starttime="20200602 20:42:39.274" endtime="20200602 20:42:39.301"></status>
+</kw>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>id=md_title</arg>
+<arg>timeout=3s</arg>
+<arg>error=Dialog should be visible.</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=${timeout}</arg>
+<arg>error=${error}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200602 20:42:39.304" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.304" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-33&gt;", line 2, in capture_page_screenshot
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.302" endtime="20200602 20:42:39.304"></status>
+</kw>
+<msg timestamp="20200602 20:42:39.306" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.307" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.307" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-68&gt;", line 2, in wait_until_page_contains_element
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 88, in wait_until_page_contains_element
+    self._wait_until(timeout, error, self._is_element_present, locator)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 122, in _wait_until
+    self._wait_until_no_error(timeout, wait_func)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 128, in _wait_until_no_error
+    timeout_error = wait_func(*args)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 120, in wait_func
+    return None if function(*args) else error
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 619, in _is_element_present
+    application = self._current_application()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.302" endtime="20200602 20:42:39.308"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=${timeout}</arg>
+<arg>error=${error}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200602 20:42:39.310" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.311" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-33&gt;", line 2, in capture_page_screenshot
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.309" endtime="20200602 20:42:39.311"></status>
+</kw>
+<msg timestamp="20200602 20:42:39.312" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.313" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.314" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-65&gt;", line 2, in wait_until_element_is_visible
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 28, in wait_until_element_is_visible
+    self._wait_until_no_error(timeout, check_visibility)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 128, in _wait_until_no_error
+    timeout_error = wait_func(*args)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 21, in check_visibility
+    visible = self._is_visible(locator)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 624, in _is_visible
+    element = self._element_find(locator, True, False)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 570, in _element_find
+    application = self._current_application()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.308" endtime="20200602 20:42:39.314"></status>
+</kw>
+<status status="FAIL" starttime="20200602 20:42:39.301" endtime="20200602 20:42:39.315"></status>
+</kw>
+<kw name="Get Text" library="AppiumLibrary">
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<arguments>
+<arg>id=md_title</arg>
+</arguments>
+<assign>
+<var>${dialogTitle}</var>
+</assign>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200602 20:42:39.317" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.317" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-33&gt;", line 2, in capture_page_screenshot
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.315" endtime="20200602 20:42:39.318"></status>
+</kw>
+<msg timestamp="20200602 20:42:39.319" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.320" level="INFO">${dialogTitle} = None</msg>
+<msg timestamp="20200602 20:42:39.321" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.321" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-29&gt;", line 2, in get_text
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 418, in get_text
+    text = self._get_text(locator)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 608, in _get_text
+    element = self._element_find(locator, True, True)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 570, in _element_find
+    application = self._current_application()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.315" endtime="20200602 20:42:39.321"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>Warning</arg>
+<arg>${dialogTitle}</arg>
+</arguments>
+<msg timestamp="20200602 20:42:39.322" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;class 'NoneType'&gt;</msg>
+<msg timestamp="20200602 20:42:39.322" level="FAIL">Warning != None</msg>
+<msg timestamp="20200602 20:42:39.323" level="DEBUG">Traceback (most recent call last):
+  None</msg>
+<status status="FAIL" starttime="20200602 20:42:39.322" endtime="20200602 20:42:39.323"></status>
+</kw>
+<kw name="Get Text" library="AppiumLibrary">
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<arguments>
+<arg>id=md_content</arg>
+</arguments>
+<assign>
+<var>${dialogContent}</var>
+</assign>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200602 20:42:39.326" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.326" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-33&gt;", line 2, in capture_page_screenshot
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.324" endtime="20200602 20:42:39.326"></status>
+</kw>
+<msg timestamp="20200602 20:42:39.327" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.328" level="INFO">${dialogContent} = None</msg>
+<msg timestamp="20200602 20:42:39.330" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.330" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-29&gt;", line 2, in get_text
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 418, in get_text
+    text = self._get_text(locator)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 608, in _get_text
+    element = self._element_find(locator, True, True)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 570, in _element_find
+    application = self._current_application()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.323" endtime="20200602 20:42:39.331"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>Are you sure you want to delete this wallet? All the related data will be removed.</arg>
+<arg>${dialogContent}</arg>
+</arguments>
+<msg timestamp="20200602 20:42:39.332" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;class 'NoneType'&gt;</msg>
+<msg timestamp="20200602 20:42:39.333" level="FAIL">Are you sure you want to delete this wallet? All the related data will be removed. != None</msg>
+<msg timestamp="20200602 20:42:39.333" level="DEBUG">Traceback (most recent call last):
+  None</msg>
+<status status="FAIL" starttime="20200602 20:42:39.332" endtime="20200602 20:42:39.333"></status>
+</kw>
+<kw name="Click Element After It Is Visible" library="Keywords">
+<arguments>
+<arg>id=md_buttonDefaultPositive</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=${timeout}</arg>
+<arg>error=${error}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200602 20:42:39.338" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.338" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-33&gt;", line 2, in capture_page_screenshot
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.336" endtime="20200602 20:42:39.338"></status>
+</kw>
+<msg timestamp="20200602 20:42:39.341" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.342" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.343" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-68&gt;", line 2, in wait_until_page_contains_element
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 88, in wait_until_page_contains_element
+    self._wait_until(timeout, error, self._is_element_present, locator)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 122, in _wait_until
+    self._wait_until_no_error(timeout, wait_func)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 128, in _wait_until_no_error
+    timeout_error = wait_func(*args)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 120, in wait_func
+    return None if function(*args) else error
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 619, in _is_element_present
+    application = self._current_application()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.335" endtime="20200602 20:42:39.344"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=${timeout}</arg>
+<arg>error=${error}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200602 20:42:39.347" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.347" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-33&gt;", line 2, in capture_page_screenshot
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.345" endtime="20200602 20:42:39.347"></status>
+</kw>
+<msg timestamp="20200602 20:42:39.349" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.350" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.350" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-65&gt;", line 2, in wait_until_element_is_visible
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 28, in wait_until_element_is_visible
+    self._wait_until_no_error(timeout, check_visibility)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 128, in _wait_until_no_error
+    timeout_error = wait_func(*args)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 21, in check_visibility
+    visible = self._is_visible(locator)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 624, in _is_visible
+    element = self._element_find(locator, True, False)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 570, in _element_find
+    application = self._current_application()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.344" endtime="20200602 20:42:39.351"></status>
+</kw>
+<status status="FAIL" starttime="20200602 20:42:39.334" endtime="20200602 20:42:39.351"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200602 20:42:39.362" level="INFO">Clicking element 'id=md_buttonDefaultPositive'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200602 20:42:39.365" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.366" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-33&gt;", line 2, in capture_page_screenshot
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.363" endtime="20200602 20:42:39.366"></status>
+</kw>
+<msg timestamp="20200602 20:42:39.367" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.369" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.369" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-3&gt;", line 2, in click_element
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 42, in click_element
+    self._element_find(locator, True, True).click()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 570, in _element_find
+    application = self._current_application()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.352" endtime="20200602 20:42:39.370"></status>
+</kw>
+<status status="FAIL" starttime="20200602 20:42:39.334" endtime="20200602 20:42:39.370"></status>
+</kw>
+<kw name="Page Should Not Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page not contains `locator` element.</doc>
+<arguments>
+<arg>//*[@text="Living Expenses"]</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200602 20:42:39.373" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.373" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-33&gt;", line 2, in capture_page_screenshot
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.371" endtime="20200602 20:42:39.373"></status>
+</kw>
+<msg timestamp="20200602 20:42:39.375" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.377" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.377" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-14&gt;", line 2, in page_should_not_contain_element
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 149, in page_should_not_contain_element
+    if self._is_element_present(locator):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_element.py", line 619, in _is_element_present
+    application = self._current_application()
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.370" endtime="20200602 20:42:39.377"></status>
+</kw>
+<status status="FAIL" starttime="20200602 20:42:39.127" endtime="20200602 20:42:39.378"></status>
+</kw>
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20200602 20:42:39.380" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.381" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-33&gt;", line 2, in capture_page_screenshot
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_screenshot.py", line 31, in capture_page_screenshot
+    if hasattr(self._current_application(), 'get_screenshot_as_file'):
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.379" endtime="20200602 20:42:39.381"></status>
+</kw>
+<msg timestamp="20200602 20:42:39.383" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.384" level="FAIL">No application is open</msg>
+<msg timestamp="20200602 20:42:39.384" level="DEBUG">Traceback (most recent call last):
+  File "&lt;decorator-gen-34&gt;", line 2, in close_application
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 22, in close_application
+    self._debug('Closing application with session id %s' % self._current_application().session_id)
+  File "C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages\AppiumLibrary\keywords\_applicationmanagement.py", line 349, in _current_application
+    raise RuntimeError('No application is open')</msg>
+<status status="FAIL" starttime="20200602 20:42:39.378" endtime="20200602 20:42:39.384"></status>
+</kw>
+<status status="FAIL" starttime="20200602 20:42:39.096" endtime="20200602 20:42:39.385">Several failures occurred:
+
+1) No application is open
+
+2) No application is open
+
+3) No application is open
+
+4) No application is open
+
+5) No application is open
+
+6) No application is open
+
+7) No application is open
+
+8) No application is open
+
+9) No application is open
+
+    [ Message content over the limit has been removed. ]
+21) No application is open
+
+22) No application is open
+
+23) Warning != None
+
+24) No application is open
+
+25) Are you sure you want to delete this wallet? All the related data will be removed. != None
+
+26) No application is open
+
+27) No application is open
+
+28) No application is open
+
+29) No application is open
+
+30) No application is open</status>
+</kw>
+<status status="FAIL" starttime="20200602 20:42:36.517" endtime="20200602 20:42:39.385" critical="yes">Setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\Dctrack\Desktop\STV_Porject\moneywallet\app\proprietaryOsm\release\app-proprietary-osm-release.apk' does not exist or is not accessible
+
+
+Also teardown failed:
+Several failures occurred:
+
+1) No application is open
+
+2) No application is open
+
+3) No application is open
+
+4) No application is open
+
+5) No application is open
+
+6) No application is open
+
+7) No application is open
+
+8) No application is open
+
+9) No application is open
+
+    [ Message content over the limit has been removed. ]
+21) No application is open
+
+22) No application is open
+
+23) Warning != None
+
+24) No application is open
+
+25) Are you sure you want to delete this wallet? All the related data will be removed. != None
+
+26) No application is open
+
+27) No application is open
+
+28) No application is open
+
+29) No application is open
+
+30) No application is open</status>
+</test>
+<status status="FAIL" starttime="20200602 20:42:36.175" endtime="20200602 20:42:39.386"></status>
+</suite>
+<status status="FAIL" starttime="20200602 20:42:36.171" endtime="20200602 20:42:39.389"></status>
+</suite>
+<status status="FAIL" starttime="20200602 20:42:36.137" endtime="20200602 20:42:39.391"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Moneywallet Test Automation">Moneywallet Test Automation</stat>
+<stat pass="0" fail="1" id="s1-s1" name="Budget">Moneywallet Test Automation.Budget</stat>
+<stat pass="0" fail="1" id="s1-s1-s1" name="Create a new Budget">Moneywallet Test Automation.Budget.Create a new Budget</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200602 20:42:36.131" level="ERROR">Taking listener './dctlib/listeners/no_rush.py' into use failed: Importing listener 'dctlib\listeners\no_rush.py' failed: ModuleNotFoundError: No module named 'dctlib\\listeners\\no_rush'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\Lib\site-packages
+  C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\python36.zip
+  C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\DLLs
+  C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\lib
+  C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32
+  C:\Users\dcTrack\AppData\Roaming\Python\Python36\site-packages
+  C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\lib\site-packages
+  C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\lib\site-packages\sqlalchemy-1.1.15-py3.6-win32.egg
+  C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\lib\site-packages\robotframework_allurereport-1.3.0-py3.6.egg
+  C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\lib\site-packages\win32
+  C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\lib\site-packages\win32\lib
+  C:\Users\dcTrack\AppData\Local\Programs\Python\Python36-32\lib\site-packages\Pythonwin</msg>
+<msg timestamp="20200602 20:42:39.086" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.105" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.114" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.123" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.134" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.141" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.151" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.165" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.176" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.189" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.202" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.211" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.224" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.240" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.249" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.257" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.270" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.280" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.287" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.296" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.306" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.312" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.319" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.327" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.341" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.349" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.367" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.375" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20200602 20:42:39.383" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
