@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.4 (Python 3.6.3 on win32)" generated="20200611 19:50:48.018">
+<robot generator="Robot 3.0.4 (Python 3.6.3 on win32)" generated="20200611 19:55:20.100">
 <suite id="s1" name="Moneywallet Test Automation" source="C:\Users\dcTrack\Desktop\STV_Project\moneywallet_test_automation">
 <suite id="s1-s1" name="Transaction" source="C:\Users\dcTrack\Desktop\STV_Project\moneywallet_test_automation\Transaction">
 <suite id="s1-s1-s1" name="Find Transaction By Search" source="C:\Users\dcTrack\Desktop\STV_Project\moneywallet_test_automation\Transaction\Find Transaction By Search.robot">
@@ -27,7 +27,7 @@
 <arg>app=${EXECDIR}/../moneywallet/app/proprietaryOsm/release/app-proprietary-osm-release.apk</arg>
 <arg>appPackage=com.oriondev.moneywallet</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:50:48.267" endtime="20200611 19:51:07.752"></status>
+<status status="PASS" starttime="20200611 19:55:20.380" endtime="20200611 19:55:40.699"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -46,7 +46,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:07.754" endtime="20200611 19:51:08.132"></status>
+<status status="PASS" starttime="20200611 19:55:40.702" endtime="20200611 19:55:41.053"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -55,19 +55,19 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:08.132" endtime="20200611 19:51:08.161"></status>
+<status status="PASS" starttime="20200611 19:55:41.054" endtime="20200611 19:55:41.083"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:07.753" endtime="20200611 19:51:08.162"></status>
+<status status="PASS" starttime="20200611 19:55:40.702" endtime="20200611 19:55:41.084"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:08.163" level="INFO">Clicking element 'id=first_start_button'.</msg>
-<status status="PASS" starttime="20200611 19:51:08.162" endtime="20200611 19:51:08.194"></status>
+<msg timestamp="20200611 19:55:41.085" level="INFO">Clicking element 'id=first_start_button'.</msg>
+<status status="PASS" starttime="20200611 19:55:41.084" endtime="20200611 19:55:41.118"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:07.752" endtime="20200611 19:51:08.194"></status>
+<status status="PASS" starttime="20200611 19:55:40.701" endtime="20200611 19:55:41.118"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -86,7 +86,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:08.197" endtime="20200611 19:51:09.392"></status>
+<status status="PASS" starttime="20200611 19:55:41.120" endtime="20200611 19:55:42.353"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -95,19 +95,19 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:09.393" endtime="20200611 19:51:09.423"></status>
+<status status="PASS" starttime="20200611 19:55:42.354" endtime="20200611 19:55:42.386"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:08.196" endtime="20200611 19:51:09.423"></status>
+<status status="PASS" starttime="20200611 19:55:41.119" endtime="20200611 19:55:42.386"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:09.425" level="INFO">Clicking element 'id=skip'.</msg>
-<status status="PASS" starttime="20200611 19:51:09.424" endtime="20200611 19:51:09.457"></status>
+<msg timestamp="20200611 19:55:42.388" level="INFO">Clicking element 'id=skip'.</msg>
+<status status="PASS" starttime="20200611 19:55:42.387" endtime="20200611 19:55:42.422"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:08.195" endtime="20200611 19:51:09.457"></status>
+<status status="PASS" starttime="20200611 19:55:41.118" endtime="20200611 19:55:42.423"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -126,7 +126,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:09.458" endtime="20200611 19:51:10.598"></status>
+<status status="PASS" starttime="20200611 19:55:42.424" endtime="20200611 19:55:43.553"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -135,19 +135,19 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:10.599" endtime="20200611 19:51:10.632"></status>
+<status status="PASS" starttime="20200611 19:55:43.554" endtime="20200611 19:55:43.582"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:09.458" endtime="20200611 19:51:10.632"></status>
+<status status="PASS" starttime="20200611 19:55:42.423" endtime="20200611 19:55:43.583"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:10.633" level="INFO">Clicking element 'id=done'.</msg>
-<status status="PASS" starttime="20200611 19:51:10.632" endtime="20200611 19:51:10.664"></status>
+<msg timestamp="20200611 19:55:43.584" level="INFO">Clicking element 'id=done'.</msg>
+<status status="PASS" starttime="20200611 19:55:43.583" endtime="20200611 19:55:43.614"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:09.457" endtime="20200611 19:51:10.664"></status>
+<status status="PASS" starttime="20200611 19:55:42.423" endtime="20200611 19:55:43.614"></status>
 </kw>
 <kw name="Wait Until Element Is Visible On Page" library="Keywords">
 <arguments>
@@ -162,7 +162,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:10.665" endtime="20200611 19:51:12.189"></status>
+<status status="PASS" starttime="20200611 19:55:43.615" endtime="20200611 19:55:45.139"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -171,11 +171,11 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:12.190" endtime="20200611 19:51:12.240"></status>
+<status status="PASS" starttime="20200611 19:55:45.140" endtime="20200611 19:55:45.190"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:10.665" endtime="20200611 19:51:12.241"></status>
+<status status="PASS" starttime="20200611 19:55:43.615" endtime="20200611 19:55:45.191"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:50:48.267" endtime="20200611 19:51:12.241"></status>
+<status status="PASS" starttime="20200611 19:55:20.380" endtime="20200611 19:55:45.192"></status>
 </kw>
 <kw name="Create Wallet" library="Keywords">
 <kw name="Wait Until Element Is Visible On Page" library="Keywords">
@@ -191,7 +191,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:12.243" endtime="20200611 19:51:12.259"></status>
+<status status="PASS" starttime="20200611 19:55:45.193" endtime="20200611 19:55:45.207"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -200,9 +200,9 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:12.260" endtime="20200611 19:51:12.288"></status>
+<status status="PASS" starttime="20200611 19:55:45.207" endtime="20200611 19:55:45.233"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:12.242" endtime="20200611 19:51:12.289"></status>
+<status status="PASS" starttime="20200611 19:55:45.193" endtime="20200611 19:55:45.234"></status>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -210,8 +210,8 @@
 <arg>id=name_edit_text</arg>
 <arg>Living Expenses</arg>
 </arguments>
-<msg timestamp="20200611 19:51:12.290" level="INFO">Typing text 'Living Expenses' into text field 'id=name_edit_text'</msg>
-<status status="PASS" starttime="20200611 19:51:12.289" endtime="20200611 19:51:12.979"></status>
+<msg timestamp="20200611 19:55:45.235" level="INFO">Typing text 'Living Expenses' into text field 'id=name_edit_text'</msg>
+<status status="PASS" starttime="20200611 19:55:45.234" endtime="20200611 19:55:46.024"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -230,7 +230,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:12.981" endtime="20200611 19:51:13.604"></status>
+<status status="PASS" starttime="20200611 19:55:46.026" endtime="20200611 19:55:46.581"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -239,19 +239,19 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:13.604" endtime="20200611 19:51:13.635"></status>
+<status status="PASS" starttime="20200611 19:55:46.581" endtime="20200611 19:55:46.606"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:12.980" endtime="20200611 19:51:13.635"></status>
+<status status="PASS" starttime="20200611 19:55:46.026" endtime="20200611 19:55:46.607"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:13.636" level="INFO">Clicking element 'id=action_save_changes'.</msg>
-<status status="PASS" starttime="20200611 19:51:13.635" endtime="20200611 19:51:13.665"></status>
+<msg timestamp="20200611 19:55:46.608" level="INFO">Clicking element 'id=action_save_changes'.</msg>
+<status status="PASS" starttime="20200611 19:55:46.607" endtime="20200611 19:55:46.635"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:12.979" endtime="20200611 19:51:13.666"></status>
+<status status="PASS" starttime="20200611 19:55:46.025" endtime="20200611 19:55:46.636"></status>
 </kw>
 <kw name="Wait Until Element Is Visible On Page" library="Keywords">
 <arguments>
@@ -266,7 +266,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:13.667" endtime="20200611 19:51:15.221"></status>
+<status status="PASS" starttime="20200611 19:55:46.637" endtime="20200611 19:55:48.061"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -275,9 +275,9 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:15.222" endtime="20200611 19:51:15.265"></status>
+<status status="PASS" starttime="20200611 19:55:48.062" endtime="20200611 19:55:48.107"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:13.666" endtime="20200611 19:51:15.265"></status>
+<status status="PASS" starttime="20200611 19:55:46.636" endtime="20200611 19:55:48.108"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -296,7 +296,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:15.266" endtime="20200611 19:51:15.295"></status>
+<status status="PASS" starttime="20200611 19:55:48.109" endtime="20200611 19:55:48.141"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -305,19 +305,19 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:15.295" endtime="20200611 19:51:15.339"></status>
+<status status="PASS" starttime="20200611 19:55:48.142" endtime="20200611 19:55:48.188"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:15.266" endtime="20200611 19:51:15.339"></status>
+<status status="PASS" starttime="20200611 19:55:48.109" endtime="20200611 19:55:48.188"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:15.341" level="INFO">Clicking element '//*[@content-desc="Open"]'.</msg>
-<status status="PASS" starttime="20200611 19:51:15.340" endtime="20200611 19:51:15.383"></status>
+<msg timestamp="20200611 19:55:48.190" level="INFO">Clicking element '//*[@content-desc="Open"]'.</msg>
+<status status="PASS" starttime="20200611 19:55:48.189" endtime="20200611 19:55:48.236"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:15.266" endtime="20200611 19:51:15.384"></status>
+<status status="PASS" starttime="20200611 19:55:48.108" endtime="20200611 19:55:48.236"></status>
 </kw>
 <kw name="Get Text After It Is Visible" library="Keywords">
 <arguments>
@@ -339,7 +339,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:15.385" endtime="20200611 19:51:15.685"></status>
+<status status="PASS" starttime="20200611 19:55:48.238" endtime="20200611 19:55:48.551"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -348,9 +348,9 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:15.686" endtime="20200611 19:51:16.375"></status>
+<status status="PASS" starttime="20200611 19:55:48.552" endtime="20200611 19:55:49.227"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:15.384" endtime="20200611 19:51:16.376"></status>
+<status status="PASS" starttime="20200611 19:55:48.237" endtime="20200611 19:55:49.227"></status>
 </kw>
 <kw name="Get Text" library="AppiumLibrary">
 <doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
@@ -360,12 +360,12 @@
 <assign>
 <var>${text}</var>
 </assign>
-<msg timestamp="20200611 19:51:16.420" level="INFO">Element 'id=material_drawer_account_header_name' text is 'Living Expenses' </msg>
-<msg timestamp="20200611 19:51:16.420" level="INFO">${text} = Living Expenses</msg>
-<status status="PASS" starttime="20200611 19:51:16.376" endtime="20200611 19:51:16.420"></status>
+<msg timestamp="20200611 19:55:49.265" level="INFO">Element 'id=material_drawer_account_header_name' text is 'Living Expenses' </msg>
+<msg timestamp="20200611 19:55:49.266" level="INFO">${text} = Living Expenses</msg>
+<status status="PASS" starttime="20200611 19:55:49.228" endtime="20200611 19:55:49.266"></status>
 </kw>
-<msg timestamp="20200611 19:51:16.421" level="INFO">${walletName} = Living Expenses</msg>
-<status status="PASS" starttime="20200611 19:51:15.384" endtime="20200611 19:51:16.421"></status>
+<msg timestamp="20200611 19:55:49.266" level="INFO">${walletName} = Living Expenses</msg>
+<status status="PASS" starttime="20200611 19:55:48.237" endtime="20200611 19:55:49.266"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -373,9 +373,9 @@
 <arg>Living Expenses</arg>
 <arg>${walletName}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:16.421" endtime="20200611 19:51:16.422"></status>
+<status status="PASS" starttime="20200611 19:55:49.267" endtime="20200611 19:55:49.267"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:12.242" endtime="20200611 19:51:16.422"></status>
+<status status="PASS" starttime="20200611 19:55:45.192" endtime="20200611 19:55:49.267"></status>
 </kw>
 <kw name="Create A Transaction">
 <arguments>
@@ -398,7 +398,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:16.424" endtime="20200611 19:51:16.505"></status>
+<status status="PASS" starttime="20200611 19:55:49.269" endtime="20200611 19:55:49.359"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -407,19 +407,19 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:16.506" endtime="20200611 19:51:16.598"></status>
+<status status="PASS" starttime="20200611 19:55:49.360" endtime="20200611 19:55:49.450"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:16.423" endtime="20200611 19:51:16.599"></status>
+<status status="PASS" starttime="20200611 19:55:49.268" endtime="20200611 19:55:49.451"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:16.600" level="INFO">Clicking element '//*[@text="Transactions"]'.</msg>
-<status status="PASS" starttime="20200611 19:51:16.599" endtime="20200611 19:51:16.715"></status>
+<msg timestamp="20200611 19:55:49.452" level="INFO">Clicking element '//*[@text="Transactions"]'.</msg>
+<status status="PASS" starttime="20200611 19:55:49.451" endtime="20200611 19:55:49.553"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:16.423" endtime="20200611 19:51:16.716"></status>
+<status status="PASS" starttime="20200611 19:55:49.268" endtime="20200611 19:55:49.553"></status>
 </kw>
 <kw name="Wait Until Element Is Visible On Page" library="Keywords">
 <arguments>
@@ -434,7 +434,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:16.717" endtime="20200611 19:51:17.776"></status>
+<status status="PASS" starttime="20200611 19:55:49.555" endtime="20200611 19:55:50.566"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -443,9 +443,9 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:17.776" endtime="20200611 19:51:17.819"></status>
+<status status="PASS" starttime="20200611 19:55:50.567" endtime="20200611 19:55:50.607"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:16.716" endtime="20200611 19:51:17.819"></status>
+<status status="PASS" starttime="20200611 19:55:49.554" endtime="20200611 19:55:50.607"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -464,7 +464,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:17.821" endtime="20200611 19:51:17.837"></status>
+<status status="PASS" starttime="20200611 19:55:50.608" endtime="20200611 19:55:50.624"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -473,19 +473,19 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:17.837" endtime="20200611 19:51:17.870"></status>
+<status status="PASS" starttime="20200611 19:55:50.624" endtime="20200611 19:55:50.650"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:17.821" endtime="20200611 19:51:17.870"></status>
+<status status="PASS" starttime="20200611 19:55:50.608" endtime="20200611 19:55:50.650"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:17.872" level="INFO">Clicking element 'id=floating_action_button'.</msg>
-<status status="PASS" starttime="20200611 19:51:17.871" endtime="20200611 19:51:17.900"></status>
+<msg timestamp="20200611 19:55:50.651" level="INFO">Clicking element 'id=floating_action_button'.</msg>
+<status status="PASS" starttime="20200611 19:55:50.650" endtime="20200611 19:55:50.682"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:17.820" endtime="20200611 19:51:17.901"></status>
+<status status="PASS" starttime="20200611 19:55:50.607" endtime="20200611 19:55:50.682"></status>
 </kw>
 <kw name="Wait Until Element Is Visible On Page" library="Keywords">
 <arguments>
@@ -500,7 +500,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:17.901" endtime="20200611 19:51:19.102"></status>
+<status status="PASS" starttime="20200611 19:55:50.683" endtime="20200611 19:55:51.872"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -509,9 +509,9 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:19.102" endtime="20200611 19:51:19.145"></status>
+<status status="PASS" starttime="20200611 19:55:51.873" endtime="20200611 19:55:51.923"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:17.901" endtime="20200611 19:51:19.145"></status>
+<status status="PASS" starttime="20200611 19:55:50.683" endtime="20200611 19:55:51.923"></status>
 </kw>
 <kw name="Input Text After It Is Visible" library="Keywords">
 <arguments>
@@ -531,7 +531,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:19.146" endtime="20200611 19:51:19.160"></status>
+<status status="PASS" starttime="20200611 19:55:51.925" endtime="20200611 19:55:51.941"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -540,9 +540,9 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:19.160" endtime="20200611 19:51:19.185"></status>
+<status status="PASS" starttime="20200611 19:55:51.941" endtime="20200611 19:55:51.968"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:19.146" endtime="20200611 19:51:19.185"></status>
+<status status="PASS" starttime="20200611 19:55:51.924" endtime="20200611 19:55:51.968"></status>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -550,10 +550,10 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:19.187" level="INFO">Typing text 'Lunch' into text field 'id=description_edit_text'</msg>
-<status status="PASS" starttime="20200611 19:51:19.186" endtime="20200611 19:51:20.074"></status>
+<msg timestamp="20200611 19:55:51.969" level="INFO">Typing text 'Lunch' into text field 'id=description_edit_text'</msg>
+<status status="PASS" starttime="20200611 19:55:51.968" endtime="20200611 19:55:52.857"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:19.145" endtime="20200611 19:51:20.074"></status>
+<status status="PASS" starttime="20200611 19:55:51.924" endtime="20200611 19:55:52.857"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -572,7 +572,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:20.077" endtime="20200611 19:51:20.804"></status>
+<status status="PASS" starttime="20200611 19:55:52.860" endtime="20200611 19:55:53.617"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -581,19 +581,19 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:20.804" endtime="20200611 19:51:20.832"></status>
+<status status="PASS" starttime="20200611 19:55:53.617" endtime="20200611 19:55:53.646"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:20.076" endtime="20200611 19:51:20.832"></status>
+<status status="PASS" starttime="20200611 19:55:52.859" endtime="20200611 19:55:53.646"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:20.834" level="INFO">Clicking element 'id=category_edit_text'.</msg>
-<status status="PASS" starttime="20200611 19:51:20.832" endtime="20200611 19:51:21.881"></status>
+<msg timestamp="20200611 19:55:53.648" level="INFO">Clicking element 'id=category_edit_text'.</msg>
+<status status="PASS" starttime="20200611 19:55:53.647" endtime="20200611 19:55:54.600"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:20.075" endtime="20200611 19:51:21.882"></status>
+<status status="PASS" starttime="20200611 19:55:52.858" endtime="20200611 19:55:54.601"></status>
 </kw>
 <kw name="Wait Until Element Is Visible On Page" library="Keywords">
 <arguments>
@@ -608,7 +608,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:21.883" endtime="20200611 19:51:21.935"></status>
+<status status="PASS" starttime="20200611 19:55:54.603" endtime="20200611 19:55:54.645"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -617,9 +617,9 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:21.935" endtime="20200611 19:51:21.987"></status>
+<status status="PASS" starttime="20200611 19:55:54.645" endtime="20200611 19:55:54.697"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:21.882" endtime="20200611 19:51:21.987"></status>
+<status status="PASS" starttime="20200611 19:55:54.602" endtime="20200611 19:55:54.697"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -638,7 +638,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:21.989" endtime="20200611 19:51:22.024"></status>
+<status status="PASS" starttime="20200611 19:55:54.698" endtime="20200611 19:55:54.741"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -647,19 +647,19 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:22.024" endtime="20200611 19:51:22.078"></status>
+<status status="PASS" starttime="20200611 19:55:54.741" endtime="20200611 19:55:54.794"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:21.988" endtime="20200611 19:51:22.078"></status>
+<status status="PASS" starttime="20200611 19:55:54.698" endtime="20200611 19:55:54.794"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:22.080" level="INFO">Clicking element '//*[@text="Food and drinks"]'.</msg>
-<status status="PASS" starttime="20200611 19:51:22.078" endtime="20200611 19:51:22.135"></status>
+<msg timestamp="20200611 19:55:54.797" level="INFO">Clicking element '//*[@text="Food and drinks"]'.</msg>
+<status status="PASS" starttime="20200611 19:55:54.795" endtime="20200611 19:55:54.847"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:21.988" endtime="20200611 19:51:22.135"></status>
+<status status="PASS" starttime="20200611 19:55:54.697" endtime="20200611 19:55:54.848"></status>
 </kw>
 <kw name="Wait Until Element Is Visible On Page" library="Keywords">
 <arguments>
@@ -674,7 +674,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:22.136" endtime="20200611 19:51:22.806"></status>
+<status status="PASS" starttime="20200611 19:55:54.849" endtime="20200611 19:55:55.530"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -683,9 +683,9 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:22.807" endtime="20200611 19:51:22.856"></status>
+<status status="PASS" starttime="20200611 19:55:55.531" endtime="20200611 19:55:55.580"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:22.136" endtime="20200611 19:51:22.857"></status>
+<status status="PASS" starttime="20200611 19:55:54.848" endtime="20200611 19:55:55.581"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -704,7 +704,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:22.858" endtime="20200611 19:51:22.875"></status>
+<status status="PASS" starttime="20200611 19:55:55.582" endtime="20200611 19:55:55.602"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -713,19 +713,19 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:22.876" endtime="20200611 19:51:22.909"></status>
+<status status="PASS" starttime="20200611 19:55:55.603" endtime="20200611 19:55:55.631"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:22.858" endtime="20200611 19:51:22.910"></status>
+<status status="PASS" starttime="20200611 19:55:55.582" endtime="20200611 19:55:55.631"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:22.912" level="INFO">Clicking element 'id=action_save_changes'.</msg>
-<status status="PASS" starttime="20200611 19:51:22.910" endtime="20200611 19:51:22.952"></status>
+<msg timestamp="20200611 19:55:55.633" level="INFO">Clicking element 'id=action_save_changes'.</msg>
+<status status="PASS" starttime="20200611 19:55:55.632" endtime="20200611 19:55:55.667"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:22.857" endtime="20200611 19:51:22.953"></status>
+<status status="PASS" starttime="20200611 19:55:55.581" endtime="20200611 19:55:55.668"></status>
 </kw>
 <kw name="Wait Until Element Is Visible On Page" library="Keywords">
 <arguments>
@@ -740,7 +740,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:22.954" endtime="20200611 19:51:24.132"></status>
+<status status="PASS" starttime="20200611 19:55:55.669" endtime="20200611 19:55:56.823"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -749,9 +749,9 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:24.133" endtime="20200611 19:51:24.177"></status>
+<status status="PASS" starttime="20200611 19:55:56.824" endtime="20200611 19:55:56.873"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:22.953" endtime="20200611 19:51:24.177"></status>
+<status status="PASS" starttime="20200611 19:55:55.669" endtime="20200611 19:55:56.873"></status>
 </kw>
 <kw name="Wait Until Element Is Visible On Page" library="Keywords">
 <arguments>
@@ -766,7 +766,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:24.178" endtime="20200611 19:51:24.211"></status>
+<status status="PASS" starttime="20200611 19:55:56.874" endtime="20200611 19:55:56.911"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -775,11 +775,11 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:24.212" endtime="20200611 19:51:24.266"></status>
+<status status="PASS" starttime="20200611 19:55:56.912" endtime="20200611 19:55:56.969"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:24.177" endtime="20200611 19:51:24.267"></status>
+<status status="PASS" starttime="20200611 19:55:56.874" endtime="20200611 19:55:56.970"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:16.422" endtime="20200611 19:51:24.268"></status>
+<status status="PASS" starttime="20200611 19:55:49.268" endtime="20200611 19:55:56.970"></status>
 </kw>
 <kw name="Create A Transaction">
 <arguments>
@@ -802,7 +802,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:24.270" endtime="20200611 19:51:24.303"></status>
+<status status="PASS" starttime="20200611 19:55:56.972" endtime="20200611 19:55:57.007"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -811,19 +811,19 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:24.304" endtime="20200611 19:51:24.351"></status>
+<status status="PASS" starttime="20200611 19:55:57.007" endtime="20200611 19:55:57.052"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:24.269" endtime="20200611 19:51:24.352"></status>
+<status status="PASS" starttime="20200611 19:55:56.971" endtime="20200611 19:55:57.052"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:24.353" level="INFO">Clicking element '//*[@text="Transactions"]'.</msg>
-<status status="PASS" starttime="20200611 19:51:24.352" endtime="20200611 19:51:24.408"></status>
+<msg timestamp="20200611 19:55:57.054" level="INFO">Clicking element '//*[@text="Transactions"]'.</msg>
+<status status="PASS" starttime="20200611 19:55:57.053" endtime="20200611 19:55:57.097"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:24.269" endtime="20200611 19:51:24.408"></status>
+<status status="PASS" starttime="20200611 19:55:56.971" endtime="20200611 19:55:57.097"></status>
 </kw>
 <kw name="Wait Until Element Is Visible On Page" library="Keywords">
 <arguments>
@@ -838,7 +838,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:24.410" endtime="20200611 19:51:24.441"></status>
+<status status="PASS" starttime="20200611 19:55:57.098" endtime="20200611 19:55:57.127"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -847,9 +847,9 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:24.442" endtime="20200611 19:51:24.486"></status>
+<status status="PASS" starttime="20200611 19:55:57.128" endtime="20200611 19:55:57.172"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:24.409" endtime="20200611 19:51:24.486"></status>
+<status status="PASS" starttime="20200611 19:55:57.097" endtime="20200611 19:55:57.173"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -868,7 +868,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:24.487" endtime="20200611 19:51:24.504"></status>
+<status status="PASS" starttime="20200611 19:55:57.174" endtime="20200611 19:55:57.188"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -877,19 +877,19 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:24.504" endtime="20200611 19:51:24.529"></status>
+<status status="PASS" starttime="20200611 19:55:57.189" endtime="20200611 19:55:57.216"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:24.487" endtime="20200611 19:51:24.529"></status>
+<status status="PASS" starttime="20200611 19:55:57.173" endtime="20200611 19:55:57.217"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:24.531" level="INFO">Clicking element 'id=floating_action_button'.</msg>
-<status status="PASS" starttime="20200611 19:51:24.530" endtime="20200611 19:51:24.560"></status>
+<msg timestamp="20200611 19:55:57.218" level="INFO">Clicking element 'id=floating_action_button'.</msg>
+<status status="PASS" starttime="20200611 19:55:57.217" endtime="20200611 19:55:57.246"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:24.486" endtime="20200611 19:51:24.561"></status>
+<status status="PASS" starttime="20200611 19:55:57.173" endtime="20200611 19:55:57.247"></status>
 </kw>
 <kw name="Wait Until Element Is Visible On Page" library="Keywords">
 <arguments>
@@ -904,7 +904,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:24.562" endtime="20200611 19:51:25.809"></status>
+<status status="PASS" starttime="20200611 19:55:57.248" endtime="20200611 19:55:58.499"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -913,9 +913,9 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:25.810" endtime="20200611 19:51:25.853"></status>
+<status status="PASS" starttime="20200611 19:55:58.500" endtime="20200611 19:55:58.542"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:24.561" endtime="20200611 19:51:25.854"></status>
+<status status="PASS" starttime="20200611 19:55:57.247" endtime="20200611 19:55:58.542"></status>
 </kw>
 <kw name="Input Text After It Is Visible" library="Keywords">
 <arguments>
@@ -935,7 +935,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:25.855" endtime="20200611 19:51:25.872"></status>
+<status status="PASS" starttime="20200611 19:55:58.544" endtime="20200611 19:55:58.559"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -944,9 +944,9 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:25.872" endtime="20200611 19:51:25.899"></status>
+<status status="PASS" starttime="20200611 19:55:58.560" endtime="20200611 19:55:58.591"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:25.855" endtime="20200611 19:51:25.900"></status>
+<status status="PASS" starttime="20200611 19:55:58.543" endtime="20200611 19:55:58.591"></status>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -954,10 +954,10 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:25.902" level="INFO">Typing text 'Dinner' into text field 'id=description_edit_text'</msg>
-<status status="PASS" starttime="20200611 19:51:25.900" endtime="20200611 19:51:25.973"></status>
+<msg timestamp="20200611 19:55:58.593" level="INFO">Typing text 'Dinner' into text field 'id=description_edit_text'</msg>
+<status status="PASS" starttime="20200611 19:55:58.592" endtime="20200611 19:55:59.469"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:25.854" endtime="20200611 19:51:25.974"></status>
+<status status="PASS" starttime="20200611 19:55:58.542" endtime="20200611 19:55:59.470"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -976,7 +976,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:25.975" endtime="20200611 19:51:26.674"></status>
+<status status="PASS" starttime="20200611 19:55:59.472" endtime="20200611 19:56:00.217"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -985,19 +985,19 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:26.674" endtime="20200611 19:51:26.699"></status>
+<status status="PASS" starttime="20200611 19:56:00.218" endtime="20200611 19:56:00.251"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:25.975" endtime="20200611 19:51:26.699"></status>
+<status status="PASS" starttime="20200611 19:55:59.471" endtime="20200611 19:56:00.251"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:26.700" level="INFO">Clicking element 'id=category_edit_text'.</msg>
-<status status="PASS" starttime="20200611 19:51:26.699" endtime="20200611 19:51:27.704"></status>
+<msg timestamp="20200611 19:56:00.253" level="INFO">Clicking element 'id=category_edit_text'.</msg>
+<status status="PASS" starttime="20200611 19:56:00.251" endtime="20200611 19:56:01.249"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:25.974" endtime="20200611 19:51:27.705"></status>
+<status status="PASS" starttime="20200611 19:55:59.470" endtime="20200611 19:56:01.250"></status>
 </kw>
 <kw name="Wait Until Element Is Visible On Page" library="Keywords">
 <arguments>
@@ -1012,7 +1012,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:27.708" endtime="20200611 19:51:27.754"></status>
+<status status="PASS" starttime="20200611 19:56:01.253" endtime="20200611 19:56:01.292"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1021,9 +1021,9 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:27.754" endtime="20200611 19:51:27.808"></status>
+<status status="PASS" starttime="20200611 19:56:01.292" endtime="20200611 19:56:01.338"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:27.706" endtime="20200611 19:51:27.808"></status>
+<status status="PASS" starttime="20200611 19:56:01.250" endtime="20200611 19:56:01.338"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -1042,7 +1042,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:27.810" endtime="20200611 19:51:27.847"></status>
+<status status="PASS" starttime="20200611 19:56:01.339" endtime="20200611 19:56:01.375"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1051,19 +1051,19 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:27.847" endtime="20200611 19:51:27.900"></status>
+<status status="PASS" starttime="20200611 19:56:01.375" endtime="20200611 19:56:01.420"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:27.809" endtime="20200611 19:51:27.900"></status>
+<status status="PASS" starttime="20200611 19:56:01.339" endtime="20200611 19:56:01.420"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:27.902" level="INFO">Clicking element '//*[@text="Food and drinks"]'.</msg>
-<status status="PASS" starttime="20200611 19:51:27.901" endtime="20200611 19:51:28.615"></status>
+<msg timestamp="20200611 19:56:01.422" level="INFO">Clicking element '//*[@text="Food and drinks"]'.</msg>
+<status status="PASS" starttime="20200611 19:56:01.421" endtime="20200611 19:56:01.473"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:27.809" endtime="20200611 19:51:28.616"></status>
+<status status="PASS" starttime="20200611 19:56:01.339" endtime="20200611 19:56:01.474"></status>
 </kw>
 <kw name="Wait Until Element Is Visible On Page" library="Keywords">
 <arguments>
@@ -1078,7 +1078,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:28.617" endtime="20200611 19:51:28.646"></status>
+<status status="PASS" starttime="20200611 19:56:01.475" endtime="20200611 19:56:02.134"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1087,9 +1087,9 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:28.647" endtime="20200611 19:51:28.687"></status>
+<status status="PASS" starttime="20200611 19:56:02.134" endtime="20200611 19:56:02.176"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:28.616" endtime="20200611 19:51:28.687"></status>
+<status status="PASS" starttime="20200611 19:56:01.474" endtime="20200611 19:56:02.177"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -1108,7 +1108,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:28.689" endtime="20200611 19:51:28.703"></status>
+<status status="PASS" starttime="20200611 19:56:02.178" endtime="20200611 19:56:02.192"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1117,19 +1117,19 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:28.703" endtime="20200611 19:51:28.727"></status>
+<status status="PASS" starttime="20200611 19:56:02.192" endtime="20200611 19:56:02.218"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:28.688" endtime="20200611 19:51:28.728"></status>
+<status status="PASS" starttime="20200611 19:56:02.178" endtime="20200611 19:56:02.218"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:28.730" level="INFO">Clicking element 'id=action_save_changes'.</msg>
-<status status="PASS" starttime="20200611 19:51:28.728" endtime="20200611 19:51:28.756"></status>
+<msg timestamp="20200611 19:56:02.220" level="INFO">Clicking element 'id=action_save_changes'.</msg>
+<status status="PASS" starttime="20200611 19:56:02.219" endtime="20200611 19:56:02.248"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:28.688" endtime="20200611 19:51:28.757"></status>
+<status status="PASS" starttime="20200611 19:56:02.177" endtime="20200611 19:56:02.248"></status>
 </kw>
 <kw name="Wait Until Element Is Visible On Page" library="Keywords">
 <arguments>
@@ -1144,7 +1144,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:28.757" endtime="20200611 19:51:29.558"></status>
+<status status="PASS" starttime="20200611 19:56:02.249" endtime="20200611 19:56:03.062"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1153,9 +1153,9 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:29.559" endtime="20200611 19:51:29.615"></status>
+<status status="PASS" starttime="20200611 19:56:03.062" endtime="20200611 19:56:03.116"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:28.757" endtime="20200611 19:51:29.615"></status>
+<status status="PASS" starttime="20200611 19:56:02.249" endtime="20200611 19:56:03.117"></status>
 </kw>
 <kw name="Wait Until Element Is Visible On Page" library="Keywords">
 <arguments>
@@ -1170,7 +1170,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:29.616" endtime="20200611 19:51:29.651"></status>
+<status status="PASS" starttime="20200611 19:56:03.118" endtime="20200611 19:56:03.156"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1179,13 +1179,13 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:29.652" endtime="20200611 19:51:29.709"></status>
+<status status="PASS" starttime="20200611 19:56:03.157" endtime="20200611 19:56:03.204"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:29.616" endtime="20200611 19:51:29.710"></status>
+<status status="PASS" starttime="20200611 19:56:03.117" endtime="20200611 19:56:03.205"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:24.268" endtime="20200611 19:51:29.710"></status>
+<status status="PASS" starttime="20200611 19:55:56.970" endtime="20200611 19:56:03.205"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:50:48.266" endtime="20200611 19:51:29.711"></status>
+<status status="PASS" starttime="20200611 19:55:20.379" endtime="20200611 19:56:03.205"></status>
 </kw>
 <test id="s1-s1-s1-t1" name="Search Transaction by name">
 <kw name="Click Element After It Is Visible" library="Keywords">
@@ -1205,7 +1205,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:29.713" endtime="20200611 19:51:29.731"></status>
+<status status="PASS" starttime="20200611 19:56:03.207" endtime="20200611 19:56:03.222"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1214,19 +1214,19 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:29.731" endtime="20200611 19:51:29.759"></status>
+<status status="PASS" starttime="20200611 19:56:03.222" endtime="20200611 19:56:03.253"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:29.712" endtime="20200611 19:51:29.759"></status>
+<status status="PASS" starttime="20200611 19:56:03.207" endtime="20200611 19:56:03.254"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:29.761" level="INFO">Clicking element 'id=action_search_item'.</msg>
-<status status="PASS" starttime="20200611 19:51:29.760" endtime="20200611 19:51:29.791"></status>
+<msg timestamp="20200611 19:56:03.256" level="INFO">Clicking element 'id=action_search_item'.</msg>
+<status status="PASS" starttime="20200611 19:56:03.254" endtime="20200611 19:56:03.288"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:29.712" endtime="20200611 19:51:29.791"></status>
+<status status="PASS" starttime="20200611 19:56:03.206" endtime="20200611 19:56:03.288"></status>
 </kw>
 <kw name="Wait Until Element Is Visible On Page" library="Keywords">
 <arguments>
@@ -1241,7 +1241,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:29.792" endtime="20200611 19:51:30.816"></status>
+<status status="PASS" starttime="20200611 19:56:03.289" endtime="20200611 19:56:04.316"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1250,9 +1250,9 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:30.817" endtime="20200611 19:51:30.867"></status>
+<status status="PASS" starttime="20200611 19:56:04.317" endtime="20200611 19:56:04.359"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:29.792" endtime="20200611 19:51:30.868"></status>
+<status status="PASS" starttime="20200611 19:56:03.289" endtime="20200611 19:56:04.359"></status>
 </kw>
 <kw name="Input Text After It Is Visible" library="Keywords">
 <arguments>
@@ -1272,7 +1272,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:30.869" endtime="20200611 19:51:30.886"></status>
+<status status="PASS" starttime="20200611 19:56:04.361" endtime="20200611 19:56:04.376"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1281,9 +1281,9 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:30.886" endtime="20200611 19:51:30.912"></status>
+<status status="PASS" starttime="20200611 19:56:04.377" endtime="20200611 19:56:04.402"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:30.868" endtime="20200611 19:51:30.912"></status>
+<status status="PASS" starttime="20200611 19:56:04.360" endtime="20200611 19:56:04.403"></status>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -1291,10 +1291,10 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:30.913" level="INFO">Typing text 'Lunch' into text field 'id=search_edit_text'</msg>
-<status status="PASS" starttime="20200611 19:51:30.912" endtime="20200611 19:51:31.552"></status>
+<msg timestamp="20200611 19:56:04.404" level="INFO">Typing text 'Lunch' into text field 'id=search_edit_text'</msg>
+<status status="PASS" starttime="20200611 19:56:04.403" endtime="20200611 19:56:05.043"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:30.868" endtime="20200611 19:51:31.552"></status>
+<status status="PASS" starttime="20200611 19:56:04.360" endtime="20200611 19:56:05.043"></status>
 </kw>
 <kw name="Wait Until Element Is Visible On Page" library="Keywords">
 <arguments>
@@ -1309,7 +1309,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:31.553" endtime="20200611 19:51:32.215"></status>
+<status status="PASS" starttime="20200611 19:56:05.044" endtime="20200611 19:56:05.724"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1318,17 +1318,17 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:32.216" endtime="20200611 19:51:32.253"></status>
+<status status="PASS" starttime="20200611 19:56:05.724" endtime="20200611 19:56:05.760"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:31.553" endtime="20200611 19:51:32.253"></status>
+<status status="PASS" starttime="20200611 19:56:05.044" endtime="20200611 19:56:05.760"></status>
 </kw>
 <kw name="Page Should Not Contain Element" library="AppiumLibrary">
 <doc>Verifies that current page not contains `locator` element.</doc>
 <arguments>
 <arg>//*[@text="Food and drinks" and following-sibling::*[@text="Dinner"]]</arg>
 </arguments>
-<msg timestamp="20200611 19:51:32.278" level="INFO">Current page not contains element '//*[@text="Food and drinks" and following-sibling::*[@text="Dinner"]]'.</msg>
-<status status="PASS" starttime="20200611 19:51:32.254" endtime="20200611 19:51:32.278"></status>
+<msg timestamp="20200611 19:56:05.784" level="INFO">Current page not contains element '//*[@text="Food and drinks" and following-sibling::*[@text="Dinner"]]'.</msg>
+<status status="PASS" starttime="20200611 19:56:05.761" endtime="20200611 19:56:05.785"></status>
 </kw>
 <kw name="Input Text After It Is Visible" library="Keywords">
 <arguments>
@@ -1348,7 +1348,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:32.280" endtime="20200611 19:51:32.294"></status>
+<status status="PASS" starttime="20200611 19:56:05.786" endtime="20200611 19:56:05.799"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1357,9 +1357,9 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:32.294" endtime="20200611 19:51:32.320"></status>
+<status status="PASS" starttime="20200611 19:56:05.800" endtime="20200611 19:56:05.825"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:32.279" endtime="20200611 19:51:32.320"></status>
+<status status="PASS" starttime="20200611 19:56:05.786" endtime="20200611 19:56:05.825"></status>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -1367,10 +1367,10 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:32.322" level="INFO">Typing text 'Dinner' into text field 'id=search_edit_text'</msg>
-<status status="PASS" starttime="20200611 19:51:32.320" endtime="20200611 19:51:32.995"></status>
+<msg timestamp="20200611 19:56:05.826" level="INFO">Typing text 'Dinner' into text field 'id=search_edit_text'</msg>
+<status status="PASS" starttime="20200611 19:56:05.825" endtime="20200611 19:56:06.495"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:32.279" endtime="20200611 19:51:32.996"></status>
+<status status="PASS" starttime="20200611 19:56:05.785" endtime="20200611 19:56:06.496"></status>
 </kw>
 <kw name="Wait Until Element Is Visible On Page" library="Keywords">
 <arguments>
@@ -1385,7 +1385,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:32.997" endtime="20200611 19:51:33.713"></status>
+<status status="PASS" starttime="20200611 19:56:06.497" endtime="20200611 19:56:07.165"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1394,18 +1394,19 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:33.713" endtime="20200611 19:51:33.761"></status>
+<status status="PASS" starttime="20200611 19:56:07.165" endtime="20200611 19:56:07.202"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:32.996" endtime="20200611 19:51:33.761"></status>
+<status status="PASS" starttime="20200611 19:56:06.496" endtime="20200611 19:56:07.202"></status>
 </kw>
 <kw name="Page Should Not Contain Element" library="AppiumLibrary">
 <doc>Verifies that current page not contains `locator` element.</doc>
 <arguments>
 <arg>//*[@text="Food and drinks" and following-sibling::*[@text="Lunch"]]</arg>
 </arguments>
-<msg timestamp="20200611 19:51:33.787" level="INFO">Current page not contains element '//*[@text="Food and drinks" and following-sibling::*[@text="Lunch"]]'.</msg>
-<status status="PASS" starttime="20200611 19:51:33.762" endtime="20200611 19:51:33.787"></status>
+<msg timestamp="20200611 19:56:07.227" level="INFO">Current page not contains element '//*[@text="Food and drinks" and following-sibling::*[@text="Lunch"]]'.</msg>
+<status status="PASS" starttime="20200611 19:56:07.203" endtime="20200611 19:56:07.227"></status>
 </kw>
+<kw name="Go Back To Database Page" library="Keywords" type="teardown">
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
 <arg>//*[contains(@resource-id, "primary_toolbar")]/*[@class="android.widget.ImageButton"]</arg>
@@ -1423,7 +1424,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:33.789" endtime="20200611 19:51:33.814"></status>
+<status status="PASS" starttime="20200611 19:56:07.230" endtime="20200611 19:56:07.253"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1432,21 +1433,23 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:33.815" endtime="20200611 19:51:33.861"></status>
+<status status="PASS" starttime="20200611 19:56:07.254" endtime="20200611 19:56:07.295"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:33.789" endtime="20200611 19:51:33.861"></status>
+<status status="PASS" starttime="20200611 19:56:07.229" endtime="20200611 19:56:07.295"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:33.863" level="INFO">Clicking element '//*[contains(@resource-id, "primary_toolbar")]/*[@class="android.widget.ImageButton"]'.</msg>
-<status status="PASS" starttime="20200611 19:51:33.861" endtime="20200611 19:51:33.904"></status>
+<msg timestamp="20200611 19:56:07.297" level="INFO">Clicking element '//*[contains(@resource-id, "primary_toolbar")]/*[@class="android.widget.ImageButton"]'.</msg>
+<status status="PASS" starttime="20200611 19:56:07.296" endtime="20200611 19:56:07.336"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:33.788" endtime="20200611 19:51:33.904"></status>
+<status status="PASS" starttime="20200611 19:56:07.229" endtime="20200611 19:56:07.337"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:29.711" endtime="20200611 19:51:33.904" critical="yes"></status>
+<status status="PASS" starttime="20200611 19:56:07.228" endtime="20200611 19:56:07.337"></status>
+</kw>
+<status status="PASS" starttime="20200611 19:56:03.206" endtime="20200611 19:56:07.338" critical="yes"></status>
 </test>
 <test id="s1-s1-s1-t2" name="Search Transaction by category">
 <kw name="Click Element After It Is Visible" library="Keywords">
@@ -1466,7 +1469,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:33.908" endtime="20200611 19:51:34.531"></status>
+<status status="PASS" starttime="20200611 19:56:07.341" endtime="20200611 19:56:07.967"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1475,19 +1478,19 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:34.531" endtime="20200611 19:51:34.560"></status>
+<status status="PASS" starttime="20200611 19:56:07.968" endtime="20200611 19:56:08.001"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:33.906" endtime="20200611 19:51:34.560"></status>
+<status status="PASS" starttime="20200611 19:56:07.340" endtime="20200611 19:56:08.002"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:34.562" level="INFO">Clicking element 'id=action_search_item'.</msg>
-<status status="PASS" starttime="20200611 19:51:34.561" endtime="20200611 19:51:34.597"></status>
+<msg timestamp="20200611 19:56:08.004" level="INFO">Clicking element 'id=action_search_item'.</msg>
+<status status="PASS" starttime="20200611 19:56:08.002" endtime="20200611 19:56:08.040"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:33.906" endtime="20200611 19:51:34.597"></status>
+<status status="PASS" starttime="20200611 19:56:07.339" endtime="20200611 19:56:08.041"></status>
 </kw>
 <kw name="Wait Until Element Is Visible On Page" library="Keywords">
 <arguments>
@@ -1502,7 +1505,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:34.598" endtime="20200611 19:51:35.666"></status>
+<status status="PASS" starttime="20200611 19:56:08.043" endtime="20200611 19:56:09.112"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1511,9 +1514,9 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:35.666" endtime="20200611 19:51:35.708"></status>
+<status status="PASS" starttime="20200611 19:56:09.112" endtime="20200611 19:56:09.149"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:34.598" endtime="20200611 19:51:35.708"></status>
+<status status="PASS" starttime="20200611 19:56:08.041" endtime="20200611 19:56:09.150"></status>
 </kw>
 <kw name="Input Text After It Is Visible" library="Keywords">
 <arguments>
@@ -1533,7 +1536,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:35.711" endtime="20200611 19:51:35.727"></status>
+<status status="PASS" starttime="20200611 19:56:09.151" endtime="20200611 19:56:09.164"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1542,9 +1545,9 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:35.727" endtime="20200611 19:51:35.753"></status>
+<status status="PASS" starttime="20200611 19:56:09.164" endtime="20200611 19:56:09.190"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:35.710" endtime="20200611 19:51:35.754"></status>
+<status status="PASS" starttime="20200611 19:56:09.150" endtime="20200611 19:56:09.191"></status>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -1552,10 +1555,10 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:35.755" level="INFO">Typing text 'Food and drinks' into text field 'id=search_edit_text'</msg>
-<status status="PASS" starttime="20200611 19:51:35.754" endtime="20200611 19:51:36.402"></status>
+<msg timestamp="20200611 19:56:09.192" level="INFO">Typing text 'Food and drinks' into text field 'id=search_edit_text'</msg>
+<status status="PASS" starttime="20200611 19:56:09.191" endtime="20200611 19:56:09.851"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:35.709" endtime="20200611 19:51:36.403"></status>
+<status status="PASS" starttime="20200611 19:56:09.150" endtime="20200611 19:56:09.852"></status>
 </kw>
 <kw name="Wait Until Element Is Visible On Page" library="Keywords">
 <arguments>
@@ -1570,7 +1573,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:36.404" endtime="20200611 19:51:37.031"></status>
+<status status="PASS" starttime="20200611 19:56:09.853" endtime="20200611 19:56:10.482"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1579,9 +1582,9 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:37.031" endtime="20200611 19:51:37.073"></status>
+<status status="PASS" starttime="20200611 19:56:10.483" endtime="20200611 19:56:10.520"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:36.403" endtime="20200611 19:51:37.073"></status>
+<status status="PASS" starttime="20200611 19:56:09.852" endtime="20200611 19:56:10.522"></status>
 </kw>
 <kw name="Wait Until Element Is Visible On Page" library="Keywords">
 <arguments>
@@ -1596,7 +1599,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:37.074" endtime="20200611 19:51:37.101"></status>
+<status status="PASS" starttime="20200611 19:56:10.523" endtime="20200611 19:56:10.546"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1605,10 +1608,11 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:37.101" endtime="20200611 19:51:37.145"></status>
+<status status="PASS" starttime="20200611 19:56:10.547" endtime="20200611 19:56:10.583"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:37.073" endtime="20200611 19:51:37.146"></status>
+<status status="PASS" starttime="20200611 19:56:10.522" endtime="20200611 19:56:10.585"></status>
 </kw>
+<kw name="Go Back To Database Page" library="Keywords" type="teardown">
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
 <arg>//*[contains(@resource-id, "primary_toolbar")]/*[@class="android.widget.ImageButton"]</arg>
@@ -1626,7 +1630,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:37.147" endtime="20200611 19:51:37.173"></status>
+<status status="PASS" starttime="20200611 19:56:10.586" endtime="20200611 19:56:10.616"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1635,21 +1639,23 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:37.174" endtime="20200611 19:51:37.213"></status>
+<status status="PASS" starttime="20200611 19:56:10.616" endtime="20200611 19:56:10.654"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:37.147" endtime="20200611 19:51:37.213"></status>
+<status status="PASS" starttime="20200611 19:56:10.586" endtime="20200611 19:56:10.654"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:37.215" level="INFO">Clicking element '//*[contains(@resource-id, "primary_toolbar")]/*[@class="android.widget.ImageButton"]'.</msg>
-<status status="PASS" starttime="20200611 19:51:37.214" endtime="20200611 19:51:37.259"></status>
+<msg timestamp="20200611 19:56:10.656" level="INFO">Clicking element '//*[contains(@resource-id, "primary_toolbar")]/*[@class="android.widget.ImageButton"]'.</msg>
+<status status="PASS" starttime="20200611 19:56:10.654" endtime="20200611 19:56:10.695"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:37.146" endtime="20200611 19:51:37.260"></status>
+<status status="PASS" starttime="20200611 19:56:10.586" endtime="20200611 19:56:10.696"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:33.906" endtime="20200611 19:51:37.260" critical="yes"></status>
+<status status="PASS" starttime="20200611 19:56:10.585" endtime="20200611 19:56:10.696"></status>
+</kw>
+<status status="PASS" starttime="20200611 19:56:07.338" endtime="20200611 19:56:10.696" critical="yes"></status>
 </test>
 <kw name="Run Keywords" library="BuiltIn" type="teardown">
 <doc>Executes all the given keywords in a sequence.</doc>
@@ -1678,7 +1684,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:37.264" endtime="20200611 19:51:37.909"></status>
+<status status="PASS" starttime="20200611 19:56:10.699" endtime="20200611 19:56:11.351"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1687,19 +1693,19 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:37.909" endtime="20200611 19:51:37.957"></status>
+<status status="PASS" starttime="20200611 19:56:11.351" endtime="20200611 19:56:11.400"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:37.263" endtime="20200611 19:51:37.958"></status>
+<status status="PASS" starttime="20200611 19:56:10.698" endtime="20200611 19:56:11.400"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:37.959" level="INFO">Clicking element '//*[@content-desc="Open"]'.</msg>
-<status status="PASS" starttime="20200611 19:51:37.958" endtime="20200611 19:51:38.006"></status>
+<msg timestamp="20200611 19:56:11.402" level="INFO">Clicking element '//*[@content-desc="Open"]'.</msg>
+<status status="PASS" starttime="20200611 19:56:11.401" endtime="20200611 19:56:11.450"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:37.262" endtime="20200611 19:51:38.006"></status>
+<status status="PASS" starttime="20200611 19:56:10.698" endtime="20200611 19:56:11.451"></status>
 </kw>
 <kw name="Delete Wallet" library="Keywords">
 <kw name="Click Element After It Is Visible" library="Keywords">
@@ -1719,7 +1725,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:38.008" endtime="20200611 19:51:38.300"></status>
+<status status="PASS" starttime="20200611 19:56:11.452" endtime="20200611 19:56:11.736"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1728,19 +1734,19 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:38.301" endtime="20200611 19:51:39.028"></status>
+<status status="PASS" starttime="20200611 19:56:11.737" endtime="20200611 19:56:12.447"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:38.007" endtime="20200611 19:51:39.028"></status>
+<status status="PASS" starttime="20200611 19:56:11.452" endtime="20200611 19:56:12.447"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:39.030" level="INFO">Clicking element 'id=material_drawer_account_header_text_section'.</msg>
-<status status="PASS" starttime="20200611 19:51:39.029" endtime="20200611 19:51:39.064"></status>
+<msg timestamp="20200611 19:56:12.449" level="INFO">Clicking element 'id=material_drawer_account_header_text_section'.</msg>
+<status status="PASS" starttime="20200611 19:56:12.448" endtime="20200611 19:56:12.486"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:38.007" endtime="20200611 19:51:39.064"></status>
+<status status="PASS" starttime="20200611 19:56:11.452" endtime="20200611 19:56:12.487"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -1759,7 +1765,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:39.066" endtime="20200611 19:51:39.907"></status>
+<status status="PASS" starttime="20200611 19:56:12.489" endtime="20200611 19:56:12.603"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1768,19 +1774,19 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:39.908" endtime="20200611 19:51:40.003"></status>
+<status status="PASS" starttime="20200611 19:56:12.604" endtime="20200611 19:56:13.350"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:39.065" endtime="20200611 19:51:40.004"></status>
+<status status="PASS" starttime="20200611 19:56:12.488" endtime="20200611 19:56:13.351"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:40.006" level="INFO">Clicking element '//*[@text="Manage wallets"]'.</msg>
-<status status="PASS" starttime="20200611 19:51:40.004" endtime="20200611 19:51:40.073"></status>
+<msg timestamp="20200611 19:56:13.353" level="INFO">Clicking element '//*[@text="Manage wallets"]'.</msg>
+<status status="PASS" starttime="20200611 19:56:13.352" endtime="20200611 19:56:13.439"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:39.065" endtime="20200611 19:51:40.074"></status>
+<status status="PASS" starttime="20200611 19:56:12.487" endtime="20200611 19:56:13.440"></status>
 </kw>
 <kw name="Wait Until Element Is Visible On Page" library="Keywords">
 <arguments>
@@ -1795,7 +1801,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:40.075" endtime="20200611 19:51:41.149"></status>
+<status status="PASS" starttime="20200611 19:56:13.441" endtime="20200611 19:56:14.498"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1804,9 +1810,9 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:41.149" endtime="20200611 19:51:41.191"></status>
+<status status="PASS" starttime="20200611 19:56:14.498" endtime="20200611 19:56:14.539"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:40.074" endtime="20200611 19:51:41.192"></status>
+<status status="PASS" starttime="20200611 19:56:13.440" endtime="20200611 19:56:14.539"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -1825,7 +1831,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:41.193" endtime="20200611 19:51:41.221"></status>
+<status status="PASS" starttime="20200611 19:56:14.542" endtime="20200611 19:56:14.571"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1834,19 +1840,19 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:41.222" endtime="20200611 19:51:41.264"></status>
+<status status="PASS" starttime="20200611 19:56:14.571" endtime="20200611 19:56:14.609"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:41.193" endtime="20200611 19:51:41.265"></status>
+<status status="PASS" starttime="20200611 19:56:14.541" endtime="20200611 19:56:14.610"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:41.266" level="INFO">Clicking element '//*[@text="Living Expenses"]'.</msg>
-<status status="PASS" starttime="20200611 19:51:41.265" endtime="20200611 19:51:41.310"></status>
+<msg timestamp="20200611 19:56:14.612" level="INFO">Clicking element '//*[@text="Living Expenses"]'.</msg>
+<status status="PASS" starttime="20200611 19:56:14.610" endtime="20200611 19:56:14.656"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:41.192" endtime="20200611 19:51:41.311"></status>
+<status status="PASS" starttime="20200611 19:56:14.540" endtime="20200611 19:56:14.656"></status>
 </kw>
 <kw name="Wait Until Element Is Visible On Page" library="Keywords">
 <arguments>
@@ -1861,7 +1867,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:41.312" endtime="20200611 19:51:41.937"></status>
+<status status="PASS" starttime="20200611 19:56:14.657" endtime="20200611 19:56:15.287"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1870,9 +1876,9 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:41.937" endtime="20200611 19:51:41.974"></status>
+<status status="PASS" starttime="20200611 19:56:15.287" endtime="20200611 19:56:15.324"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:41.311" endtime="20200611 19:51:41.975"></status>
+<status status="PASS" starttime="20200611 19:56:14.656" endtime="20200611 19:56:15.325"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -1891,7 +1897,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:41.976" endtime="20200611 19:51:41.990"></status>
+<status status="PASS" starttime="20200611 19:56:15.326" endtime="20200611 19:56:15.340"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1900,19 +1906,19 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:41.991" endtime="20200611 19:51:42.015"></status>
+<status status="PASS" starttime="20200611 19:56:15.340" endtime="20200611 19:56:15.368"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:41.975" endtime="20200611 19:51:42.016"></status>
+<status status="PASS" starttime="20200611 19:56:15.325" endtime="20200611 19:56:15.369"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:42.017" level="INFO">Clicking element 'id=action_delete_item'.</msg>
-<status status="PASS" starttime="20200611 19:51:42.016" endtime="20200611 19:51:42.048"></status>
+<msg timestamp="20200611 19:56:15.370" level="INFO">Clicking element 'id=action_delete_item'.</msg>
+<status status="PASS" starttime="20200611 19:56:15.369" endtime="20200611 19:56:15.396"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:41.975" endtime="20200611 19:51:42.048"></status>
+<status status="PASS" starttime="20200611 19:56:15.325" endtime="20200611 19:56:15.397"></status>
 </kw>
 <kw name="Wait Until Element Is Visible On Page" library="Keywords">
 <arguments>
@@ -1927,7 +1933,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:42.050" endtime="20200611 19:51:42.721"></status>
+<status status="PASS" starttime="20200611 19:56:15.397" endtime="20200611 19:56:16.071"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1936,9 +1942,9 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:42.722" endtime="20200611 19:51:42.749"></status>
+<status status="PASS" starttime="20200611 19:56:16.071" endtime="20200611 19:56:16.096"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:42.049" endtime="20200611 19:51:42.750"></status>
+<status status="PASS" starttime="20200611 19:56:15.397" endtime="20200611 19:56:16.096"></status>
 </kw>
 <kw name="Get Text" library="AppiumLibrary">
 <doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
@@ -1948,9 +1954,9 @@
 <assign>
 <var>${dialogTitle}</var>
 </assign>
-<msg timestamp="20200611 19:51:42.776" level="INFO">Element 'id=md_title' text is 'Warning' </msg>
-<msg timestamp="20200611 19:51:42.777" level="INFO">${dialogTitle} = Warning</msg>
-<status status="PASS" starttime="20200611 19:51:42.750" endtime="20200611 19:51:42.777"></status>
+<msg timestamp="20200611 19:56:16.122" level="INFO">Element 'id=md_title' text is 'Warning' </msg>
+<msg timestamp="20200611 19:56:16.122" level="INFO">${dialogTitle} = Warning</msg>
+<status status="PASS" starttime="20200611 19:56:16.096" endtime="20200611 19:56:16.122"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -1958,7 +1964,7 @@
 <arg>Warning</arg>
 <arg>${dialogTitle}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:42.777" endtime="20200611 19:51:42.778"></status>
+<status status="PASS" starttime="20200611 19:56:16.122" endtime="20200611 19:56:16.123"></status>
 </kw>
 <kw name="Get Text" library="AppiumLibrary">
 <doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
@@ -1968,9 +1974,9 @@
 <assign>
 <var>${dialogContent}</var>
 </assign>
-<msg timestamp="20200611 19:51:42.804" level="INFO">Element 'id=md_content' text is 'Are you sure you want to delete this wallet? All the related data will be removed.' </msg>
-<msg timestamp="20200611 19:51:42.804" level="INFO">${dialogContent} = Are you sure you want to delete this wallet? All the related data will be removed.</msg>
-<status status="PASS" starttime="20200611 19:51:42.778" endtime="20200611 19:51:42.804"></status>
+<msg timestamp="20200611 19:56:16.148" level="INFO">Element 'id=md_content' text is 'Are you sure you want to delete this wallet? All the related data will be removed.' </msg>
+<msg timestamp="20200611 19:56:16.148" level="INFO">${dialogContent} = Are you sure you want to delete this wallet? All the related data will be removed.</msg>
+<status status="PASS" starttime="20200611 19:56:16.123" endtime="20200611 19:56:16.149"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -1978,7 +1984,7 @@
 <arg>Are you sure you want to delete this wallet? All the related data will be removed.</arg>
 <arg>${dialogContent}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:42.805" endtime="20200611 19:51:42.805"></status>
+<status status="PASS" starttime="20200611 19:56:16.149" endtime="20200611 19:56:16.150"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -1997,7 +2003,7 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:42.807" endtime="20200611 19:51:42.824"></status>
+<status status="PASS" starttime="20200611 19:56:16.151" endtime="20200611 19:56:16.170"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -2006,41 +2012,41 @@
 <arg>timeout=${timeout}</arg>
 <arg>error=${error}</arg>
 </arguments>
-<status status="PASS" starttime="20200611 19:51:42.824" endtime="20200611 19:51:42.849"></status>
+<status status="PASS" starttime="20200611 19:56:16.170" endtime="20200611 19:56:16.196"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:42.806" endtime="20200611 19:51:42.850"></status>
+<status status="PASS" starttime="20200611 19:56:16.150" endtime="20200611 19:56:16.196"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200611 19:51:42.851" level="INFO">Clicking element 'id=md_buttonDefaultPositive'.</msg>
-<status status="PASS" starttime="20200611 19:51:42.850" endtime="20200611 19:51:42.877"></status>
+<msg timestamp="20200611 19:56:16.197" level="INFO">Clicking element 'id=md_buttonDefaultPositive'.</msg>
+<status status="PASS" starttime="20200611 19:56:16.196" endtime="20200611 19:56:16.222"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:42.806" endtime="20200611 19:51:42.877"></status>
+<status status="PASS" starttime="20200611 19:56:16.150" endtime="20200611 19:56:16.222"></status>
 </kw>
 <kw name="Page Should Not Contain Element" library="AppiumLibrary">
 <doc>Verifies that current page not contains `locator` element.</doc>
 <arguments>
 <arg>//*[@text="Living Expenses"]</arg>
 </arguments>
-<msg timestamp="20200611 19:51:43.186" level="INFO">Current page not contains element '//*[@text="Living Expenses"]'.</msg>
-<status status="PASS" starttime="20200611 19:51:42.878" endtime="20200611 19:51:43.186"></status>
+<msg timestamp="20200611 19:56:16.533" level="INFO">Current page not contains element '//*[@text="Living Expenses"]'.</msg>
+<status status="PASS" starttime="20200611 19:56:16.222" endtime="20200611 19:56:16.533"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:38.007" endtime="20200611 19:51:43.187"></status>
+<status status="PASS" starttime="20200611 19:56:11.451" endtime="20200611 19:56:16.534"></status>
 </kw>
 <kw name="Close Application" library="AppiumLibrary">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20200611 19:51:43.187" endtime="20200611 19:51:43.708"></status>
+<status status="PASS" starttime="20200611 19:56:16.534" endtime="20200611 19:56:16.982"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:51:37.262" endtime="20200611 19:51:43.709"></status>
+<status status="PASS" starttime="20200611 19:56:10.697" endtime="20200611 19:56:16.983"></status>
 </kw>
-<status status="PASS" starttime="20200611 19:50:48.081" endtime="20200611 19:51:43.709"></status>
+<status status="PASS" starttime="20200611 19:55:20.169" endtime="20200611 19:56:16.983"></status>
 </suite>
-<status status="PASS" starttime="20200611 19:50:48.078" endtime="20200611 19:51:43.713"></status>
+<status status="PASS" starttime="20200611 19:55:20.166" endtime="20200611 19:56:16.988"></status>
 </suite>
-<status status="PASS" starttime="20200611 19:50:48.058" endtime="20200611 19:51:43.716"></status>
+<status status="PASS" starttime="20200611 19:55:20.144" endtime="20200611 19:56:16.992"></status>
 </suite>
 <statistics>
 <total>

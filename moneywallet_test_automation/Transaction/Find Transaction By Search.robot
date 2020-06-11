@@ -5,6 +5,7 @@ Suite Setup    Run Keywords    Open App
 ...                    AND    Create Wallet
 ...                    AND    Create a Transaction    Lunch
 ...                    AND    Create a Transaction    Dinner
+Test Teardown    Go Back To Database Page
 Suite Teardown    Run Keywords    Click Element After It Is Visible    //*[@content-desc="Open"]
 ...                        AND    Delete Wallet
 ...                        AND    Close Application
@@ -19,8 +20,6 @@ Search Transaction by name
     Input Text After It Is Visible    id=search_edit_text    Dinner
     Wait Until Element Is Visible On Page    //*[@text="Food and drinks" and following-sibling::*[@text="Dinner"]]    timeout=3s    error=Transaction with category: "Food and drinks" and description: "Dinner" should be visible.
     Page Should Not Contain Element    //*[@text="Food and drinks" and following-sibling::*[@text="Lunch"]]
-    Click Element After It Is Visible    //*[contains(@resource-id, "primary_toolbar")]/*[@class="android.widget.ImageButton"]
-##refactor
 
 Search Transaction by category
     Click Element After It Is Visible    id=action_search_item
@@ -28,8 +27,7 @@ Search Transaction by category
     Input Text After It Is Visible    id=search_edit_text    Food and drinks
     Wait Until Element Is Visible On Page    //*[@text="Food and drinks" and following-sibling::*[@text="Lunch"]]    timeout=3s    error=Transaction with category: "Food and drinks" and description: "Lunch" should be visible.
     Wait Until Element Is Visible On Page    //*[@text="Food and drinks" and following-sibling::*[@text="Dinner"]]    timeout=3s    error=Transaction with category: "Food and drinks" and description: "Dinner" should be visible.
-    Click Element After It Is Visible    //*[contains(@resource-id, "primary_toolbar")]/*[@class="android.widget.ImageButton"]
-##refactor
+
 *** Keywords ***
 Create A Transaction
     [Arguments]    ${transactionName}
