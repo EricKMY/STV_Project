@@ -8,7 +8,7 @@ Test Teardown    Run Keywords    Click Element After It Is Visible    //*[@conte
 ...                       AND    Close Application
 
 *** Test Cases ***
-Create a new saving
+Create a new Saving
     Click Element After It Is Visible    //*[@text="Savings"]
     Wait Until Element Is Visible On Page    //*[@text="Savings"]    timeout=3s    error=Savings page should be visible.
     Click Element After It Is Visible    id=floating_action_button
