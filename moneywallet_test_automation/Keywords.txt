@@ -56,3 +56,6 @@ Open App
 
 Go Back To List
     Click Element After It Is Visible    //*[contains(@resource-id, "secondary_toolbar")]/*[@class="android.widget.ImageButton"]
+
+Go Back To Database Page
+    Click Element After It Is Visible    //*[contains(@resource-id, "primary_toolbar")]/*[@class="android.widget.ImageButton"]
