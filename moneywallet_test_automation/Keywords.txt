@@ -59,3 +59,10 @@ Go Back To List
 
 Go Back To Database Page
     Click Element After It Is Visible    //*[contains(@resource-id, "primary_toolbar")]/*[@class="android.widget.ImageButton"]
+
+Scroll Down Until Element Is Visible
+    [Arguments]    ${element}
+        :FOR    ${i}    IN RANGE    100
+    \    ${isTargetShown} =    Run Keyword And Return Status    Wait Until Element Is Visible On Page    ${element}    timeout=0.5s    error= ${element} should be visible
+    \    Exit For Loop If    ${isTargetShown}
+    \    Swipe    0    1200    0    200
