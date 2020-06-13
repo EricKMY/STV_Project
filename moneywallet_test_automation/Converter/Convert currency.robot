@@ -31,12 +31,10 @@ Convert USD to TWD
     ${currencyTo} =    Get Text    id=text_currency_to
     Should Be Equal    TWD    ${currencyTo}
     Click Element After It Is Visible    id=keyboard_button_1
-    :FOR    ${i}    IN RANGE    6
-    \    Click Element After It Is Visible    id=keyboard_button_0
     ${currencyAmountFrom} =    Get Text    id=money_currency_from
-    Should Be Equal    1000000    ${currencyAmountFrom}
+    Should Be Equal    1    ${currencyAmountFrom}
     ${currencyAmountTo} =    Get Text    id=money_currency_to
-    Should Match Regexp    ${currencyAmountTo}    (28|29|30|31|32),\\d\\d\\d,\\d\\d\\d.\\d\\d
+    Should Match Regexp    ${currencyAmountTo}    (28|29|30|31|32).\\d\\d
 
 Convert USD to TWD with huge amount
     Click Element After It Is Visible    //*[@content-desc="Open"]
