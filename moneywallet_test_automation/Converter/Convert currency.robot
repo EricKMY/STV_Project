@@ -36,7 +36,7 @@ Convert USD to TWD
     ${currencyAmountFrom} =    Get Text    id=money_currency_from
     Should Be Equal    1000000    ${currencyAmountFrom}
     ${currencyAmountTo} =    Get Text    id=money_currency_to
-    Should Be Equal    29,620,502.00    ${currencyAmountTo}
+    Should Match Regexp    ${currencyAmountTo}    (28|29|30|31|32),\\d\\d\\d,\\d\\d\\d.\\d\\d
 
 Convert USD to TWD with huge amount
     Click Element After It Is Visible    //*[@content-desc="Open"]
@@ -63,6 +63,7 @@ Convert USD to TWD with huge amount
     Should Be Equal    1000000000000000000    ${currencyAmountFrom}
     ${currencyAmountTo} =    Get Text    id=money_currency_to
     Should Be Equal    29,620,502,000,000,000,000.00    ${currencyAmountTo}
+    Should Match Regexp    ${currencyAmountTo}    (28|29|30|31|32),\\d\\d\\d,\\d\\d\\d,\\d\\d\\d,\\d\\d\\d,\\d\\d\\d,\\d\\d\\d.\\d\\d
 
 *** Keywords ***
 Update Currencey Rate
