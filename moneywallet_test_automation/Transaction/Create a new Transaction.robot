@@ -8,7 +8,7 @@ Test Teardown    Run Keywords    Click Element After It Is Visible    //*[@conte
 ...                       AND    Close Application
 
 *** Test Cases ***
-Create a new debt
+Create a new Transaction
     Click Element After It Is Visible    //*[@text="Transactions"]
     Wait Until Element Is Visible On Page    //*[@text="Transactions"]    timeout=3s    error=Transactions page should be visible.
     Click Element After It Is Visible    id=floating_action_button

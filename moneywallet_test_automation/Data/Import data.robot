@@ -19,9 +19,6 @@ Import data
     Wait Until Element Is Visible On Page    //*[@text="Data format"]    timeout=3s    error=Data format dialog should be visible.
     Click Element After It Is Visible    //*[@text="CSV"]
     Click Element After It Is Visible    id=import_file_edit_text
-    ${warningMsg} =    Set Variable    Allow MoneyWallet to access photos, media, and files on your device?
-    Wait Until Element Is Visible On Page    //*[@text="${warningMsg}"]    timeout=3s    error=Warning dialog should be visible.
-    Click Element After It Is Visible    //*[@text="ALLOW"]
     Click Element After It Is Visible    //*[@text="Download"]
     Click Element After It Is Visible    //*[contains(@text, "MoneyWallet_export")]
     Click Element After It Is Visible    id=action_import_data

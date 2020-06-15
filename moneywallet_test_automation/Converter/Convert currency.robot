@@ -2,14 +2,14 @@
 Library    AppiumLibrary
 Resource    ../Keywords.txt
 Suite Setup    Run Keywords    Open App
-...                    AND    Create Wallet
-...                    AND    Update Currencey Rate
+...                     AND    Create Wallet
+...                     AND    Update Currencey Rate
 Test Teardown    Go Back To Database Page
 Suite Teardown    Run Keywords    Click Element After It Is Visible    //*[@content-desc="Open"]
-...                       AND    Wait Until Element Is Visible On Page    //*[@text="Settings"]    timeout=3s    error=Settings page should be visible.
-...                       AND    Swipe    0    200    0    1200
-...                       AND    Delete Wallet
-...                       AND    Close Application
+...                        AND    Wait Until Element Is Visible On Page    //*[@text="Settings"]    timeout=3s    error=Settings page should be visible.
+...                        AND    Swipe    0    200    0    1200
+...                        AND    Delete Wallet
+...                        AND    Close Application
 
 *** Test Cases ***
 Convert USD to TWD
@@ -60,7 +60,6 @@ Convert USD to TWD with huge amount
     ${currencyAmountFrom} =    Get Text    id=money_currency_from
     Should Be Equal    1000000000000000000    ${currencyAmountFrom}
     ${currencyAmountTo} =    Get Text    id=money_currency_to
-    Should Be Equal    29,620,502,000,000,000,000.00    ${currencyAmountTo}
     Should Match Regexp    ${currencyAmountTo}    (28|29|30|31|32),\\d\\d\\d,\\d\\d\\d,\\d\\d\\d,\\d\\d\\d,\\d\\d\\d,\\d\\d\\d.\\d\\d
 
 *** Keywords ***
