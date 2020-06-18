@@ -3,7 +3,10 @@ Library    AppiumLibrary
 Resource    ../Keywords.txt
 Test Setup    Run Keywords    Open App
 ...                    AND    Create a new wallet without initial amount
-Test Teardown    Run Keywords    Delete Wallet
+Test Teardown    Run Keywords    Go Back To List
+...                       AND    Go Back To Database Page
+...                       AND    Click Element After It Is Visible    //*[@content-desc="Open"]
+...                       AND    Delete Wallet    Entertainment Expenses
 ...                       AND    Close Application
 
 *** Test Cases ***

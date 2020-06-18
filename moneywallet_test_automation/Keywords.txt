@@ -33,10 +33,11 @@ Get Text After It Is Visible
     [Return]    ${text}
 
 Delete Wallet
+    [Arguments]    ${walletName}=Living Expenses
     Click Element After It Is Visible    id=material_drawer_account_header_text_section
     Click Element After It Is Visible    //*[@text="Manage wallets"]
     Wait Until Element Is Visible On Page    //*[@text="Manage wallets"]    timeout=3s    error=Manage wallets page should be visible.
-    Click Element After It Is Visible    //*[@text="Living Expenses"]
+    Click Element After It Is Visible    //*[@text="${walletName}"]
     Wait Until Element Is Visible On Page    //*[@text="Wallet"]    timeout=3s    error=Wallet page should be visible.
     Click Element After It Is Visible    id=action_delete_item
     Wait Until Element Is Visible On Page    id=md_title    timeout=3s    error=Dialog should be visible.

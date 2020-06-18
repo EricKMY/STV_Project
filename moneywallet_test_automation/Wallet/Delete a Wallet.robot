@@ -21,7 +21,6 @@ Delete a Wallet
     Should Be Equal    Are you sure you want to delete this wallet? All the related data will be removed.    ${dialogContent}
     Click Element After It Is Visible    id=md_buttonDefaultPositive
     Page Should Not Contain Element    //*[@text="Living Expenses"]
-    Close Application
 
 *** Keywords ***
 Create a new wallet without initial amount
