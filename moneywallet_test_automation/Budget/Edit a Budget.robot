@@ -20,7 +20,7 @@ Edit a Budget Type Field
     Click Element After It Is Visible    id=action_save_changes
     Wait Until Element Is Visible On Page    //*[@text="Budget"]    timeout=3s    error=Budgets page should be visible.
     Wait Until Element Is Visible On Page    //*[@text="Expenses"]    timeout=3s    error=Type should be Incomes.
-    Go Back To List
+    Go Back To Secondary Page
 
 *** Keywords ***
 Create a new budget with Incomes type

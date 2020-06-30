@@ -3,8 +3,8 @@ Library    AppiumLibrary
 Resource    ../Keywords.txt
 Test Setup    Run Keywords    Open App
 ...                    AND    Create a new wallet without initial amount
-Test Teardown    Run Keywords    Go Back To List
-...                       AND    Go Back To Database Page
+Test Teardown    Run Keywords    Go Back To Secondary Page
+...                       AND    Go Back To Primary Page
 ...                       AND    Click Element After It Is Visible    //*[@content-desc="Open"]
 ...                       AND    Delete Wallet    Living Expenses
 ...                       AND    Close Application
@@ -23,8 +23,8 @@ Edit a Wallet name
     Click Element After It Is Visible    id=action_save_changes
     ${walletName} =    Get Text After It Is Visible    id=name_text_view
     Should Be Equal    Entertainment Expenses    ${walletName}
-    [Teardown]    Run Keywords    Go Back To List
-    ...                    AND    Go Back To Database Page
+    [Teardown]    Run Keywords    Go Back To Secondary Page
+    ...                    AND    Go Back To Primary Page
     ...                    AND    Click Element After It Is Visible    //*[@content-desc="Open"]
     ...                    AND    Delete Wallet    Entertainment Expenses
     ...                    AND    Close Application
@@ -86,8 +86,8 @@ Edit a Wallet with name, amount and note
     Should Be Equal    $ 1,234.00    ${walletAmount}
     ${walletNote} =    Get Text After It Is Visible    id=note_text_view
     Should Be Equal    Stay alive    ${walletNote}
-    [Teardown]    Run Keywords    Go Back To List
-    ...                    AND    Go Back To Database Page
+    [Teardown]    Run Keywords    Go Back To Secondary Page
+    ...                    AND    Go Back To Primary Page
     ...                    AND    Click Element After It Is Visible    //*[@content-desc="Open"]
     ...                    AND    Delete Wallet    Entertainment Expenses
     ...                    AND    Close Application
@@ -105,9 +105,9 @@ Edit a Wallet with empty name
     Click Element After It Is Visible    id=action_save_changes
     Wait Until Element Is Visible On Page    //*[@text="Edit wallet"]    timeout=3s    error=Edit wallet page should be visible.
     Wait Until Page Does Not Contain Element    //*[@text="Wallet"]    timeout=3s    error=Wallet page should not be visible.
-    [Teardown]    Run Keywords    Go Back To Database Page
-    ...                    AND    Go Back To List
-    ...                    AND    Go Back To Database Page
+    [Teardown]    Run Keywords    Go Back To Primary Page
+    ...                    AND    Go Back To Secondary Page
+    ...                    AND    Go Back To Primary Page
     ...                    AND    Click Element After It Is Visible    //*[@content-desc="Open"]
     ...                    AND    Delete Wallet    Living Expenses
     ...                    AND    Close Application

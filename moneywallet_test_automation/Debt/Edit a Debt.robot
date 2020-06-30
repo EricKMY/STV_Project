@@ -4,7 +4,7 @@ Resource    ../Keywords.txt
 Test Setup    Run Keywords    Open App
 ...                    AND    Create Wallet
 ...                    AND    Create A New Debt    Home loan
-Test Teardown    Run Keywords    Go Back To List
+Test Teardown    Run Keywords    Go Back To Secondary Page
 ...                       AND    Click Element After It Is Visible    //*[@content-desc="Open"]
 ...                       AND    Delete Wallet
 ...                       AND    Close Application

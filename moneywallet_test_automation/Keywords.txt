@@ -55,10 +55,10 @@ Open App
     Click Element After It Is Visible    id=done
     Wait Until Element Is Visible On Page    //*[@text="New wallet"]    timeout=3s    error=Wallet page should be visible.
 
-Go Back To List
+Go Back To Secondary Page
     Click Element After It Is Visible    //*[contains(@resource-id, "secondary_toolbar")]/*[@class="android.widget.ImageButton"]
 
-Go Back To Database Page
+Go Back To Primary Page
     Click Element After It Is Visible    //*[contains(@resource-id, "primary_toolbar")]/*[@class="android.widget.ImageButton"]
 
 Scroll Down Until Element Is Visible

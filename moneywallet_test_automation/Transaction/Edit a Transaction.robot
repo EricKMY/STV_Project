@@ -20,7 +20,7 @@ Edit a Transaction
     Wait Until Element Is Visible On Page    //*[@text="Edit transaction"]    timeout=3s    error=Edit transaction page should be visible.
     Click Element After It Is Visible    id=action_save_changes
     Wait Until Element Is Visible On Page    //*[@text="Transaction"]    timeout=3s    error=Transaction page should be visible.
-    Go Back To List
+    Go Back To Secondary Page
     Wait Until Element Is Visible On Page    //*[@text="Transactions"]    timeout=3s    error=Transactions page should be visible.
     Wait Until Element Is Visible On Page    //*[@text="Hobby" and following-sibling::*[@text="Lunch"]]    timeout=3s    error=Transaction with category: "Hobby" and description: "Lunch" should be visible.
 

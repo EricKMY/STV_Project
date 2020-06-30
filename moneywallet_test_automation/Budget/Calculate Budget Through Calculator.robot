@@ -24,7 +24,7 @@ Edit a Budget Type Field
     Wait Until Element Is Visible On Page    //*[@text="Budget"]    timeout=3s    error=Budgets page should be visible.
     ${budgetAmount} =    Get Text    id=money_text_view
     Should Be Equal    1,234.00    ${budgetAmount}
-    Go Back To List
+    Go Back To Secondary Page
 
 *** Keywords ***
 Create a new budget with Incomes type

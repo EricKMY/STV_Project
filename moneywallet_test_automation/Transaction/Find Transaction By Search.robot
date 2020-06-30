@@ -5,7 +5,7 @@ Suite Setup    Run Keywords    Open App
 ...                    AND    Create Wallet
 ...                    AND    Create a Transaction    Lunch
 ...                    AND    Create a Transaction    Dinner
-Test Teardown    Go Back To Database Page
+Test Teardown    Go Back To Primary Page
 Suite Teardown    Run Keywords    Click Element After It Is Visible    //*[@content-desc="Open"]
 ...                        AND    Delete Wallet
 ...                        AND    Close Application

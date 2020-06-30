@@ -4,8 +4,8 @@ Resource    ../Keywords.txt
 Test Setup    Run Keywords    Open App
 ...                    AND    Create Wallet
 ...                    AND    Export Data
-Test Teardown    Run Keywords    Go Back To Database Page
-...                       AND    Go Back To List
+Test Teardown    Run Keywords    Go Back To Primary Page
+...                       AND    Go Back To Secondary Page
 ...                       AND    Click Element After It Is Visible    //*[@content-desc="Open"]
 ...                       AND    Wait Until Element Is Visible On Page    //*[@text="Settings"]    timeout=3s    error=Settings page should be visible.
 ...                       AND    Swipe    0    200    0    1200
@@ -60,4 +60,4 @@ Export Data
     ${dialogContent} =    Get Text After It Is Visible    id=md_content
     Should Be Equal    Data exported correctly. Do you want to open the created file?    ${dialogContent}
     Click Element After It Is Visible    //*[@text="CANCEL"]
-    Go Back To Database Page
+    Go Back To Primary Page

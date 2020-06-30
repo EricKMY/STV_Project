@@ -22,6 +22,11 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>libspecs/AppiumLibrary.py</name>
+			<type>1</type>
+			<location>C:/Program Files/Python36/Lib/site-packages/AppiumLibrary/keywords/_applicationmanagement.py</location>
+		</link>
+		<link>
 			<name>libspecs/BuiltIn.py</name>
 			<type>1</type>
 			<location>C:/Users/dcTrack/AppData/Local/Programs/Python/Python36-32/lib/site-packages/robot/libraries/BuiltIn.py</location>
